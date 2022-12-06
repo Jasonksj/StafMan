@@ -90,5 +90,26 @@ namespace Staff_Management.DAO
                 throw new Exception($"Erreur : {ex.Message}");
             }
         }
+
+        public Fonction Update(Fonction fonction)
+        {
+            try
+            {
+                this.fonction = fonction;
+                stafMan.SaveChanges();
+                return this.fonction;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show
+                    (
+                        $"Modification impossible de la fonction '{this.fonction.Nom}'!\nErreur : {ex.Message}",
+                        "Echec",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                return null;
+            }
+        }
     }
 }
