@@ -61,3 +61,4 @@ E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.csproj.CopyComplete
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.exe
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.pdb
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Splash_Screen.resources
