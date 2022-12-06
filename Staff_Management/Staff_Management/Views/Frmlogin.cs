@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Staff_Management
+namespace Staff_Management.Views
 {
-    public partial class Form1 : Form
+    public partial class Frmlogin : Form
     {
-        public Form1()
+        public Frmlogin()
         {
             InitializeComponent();
         }
