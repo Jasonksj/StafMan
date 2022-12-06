@@ -67,5 +67,43 @@ namespace Staff_Management.Services
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
+
+        public List<Fonction> FilterByName(string name)
+        {
+            try
+            {
+                return FindAll().Where
+                (
+                    fonction => fonction.Nom.IndexOf
+                    (
+                        name,
+                        StringComparison.CurrentCultureIgnoreCase
+                    ) != -1
+                ).ToList();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public Fonction Update(Fonction fonction)
+        {
+            try
+            {
+                if (Exists(fonction.IdFonction))
+                    return fonctionDAO.Update(fonction);
+                else
+                {
+                    MessageBox.Show
+                        (
+                            $"La fonction '{fonction.Nom} n'existe pas !",
+                            "Echec",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                }
+            }
+        }
     }
 }
