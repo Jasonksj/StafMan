@@ -48,7 +48,7 @@ namespace Staff_Management.DAO
             {
                 mainEmployee = staffManag.Employees.FirstOrDefault
                 (
-                    fonction => (fonction.Id == idEmployee)
+                    mainEmployee => (mainEmployee.Id == idEmployee)
                 );
                 staffManag.Employees.Remove(mainEmployee);
                 staffManag.SaveChanges();
@@ -73,7 +73,7 @@ namespace Staff_Management.DAO
             {
                 return staffManag.Employees.FirstOrDefault
                 (
-                    fonction => fonction.Id == idEmployee
+                    mainEmployee => mainEmployee.Id == idEmployee
                 ) != null;
             }
             catch (Exception ex)

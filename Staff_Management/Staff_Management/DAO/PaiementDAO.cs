@@ -44,17 +44,18 @@ namespace Staff_Management.DAO
             }
         }
 
-        public int Delete(int idEmployee)
+        public int Delete(int idEmployee, DateTime dateDebut)
         {
             try
             {
-                employee1 = staffManag.Employees.FirstOrDefault
+                mainPaiement = staffManag.Paiements.FirstOrDefault
                 (
-                    fonction => (fonction.Id == idEmployee)
+                    mainPaiement => mainPaiement.IdEmployee == idEmployee &&
+                                   mainPaiement.DateDebutContrat == dateDebut
                 );
-                staffManag.Employees.Remove(employee1);
+                staffManag.Paiements.Remove(mainPaiement);
                 staffManag.SaveChanges();
-                return employee1.Id;
+                return mainPaiement.IdEmployee;
             }
             catch (Exception ex)
             {
@@ -69,18 +70,19 @@ namespace Staff_Management.DAO
             }
         }
 
-        public bool Exist(int idEmployee)
+        public bool Exists(int id, DateTime dateDebut)
         {
             try
             {
-                return staffManag.Employees.FirstOrDefault
-                (
-                    fonction => fonction.Id == idEmployee
-                ) != null;
+                return staffManag.Paiements.SingleOrDefault
+                    (
+                        mainPaiement => mainPaiement.IdEmployee == id &&
+                                   mainPaiement.DateDebutContrat == dateDebut
+                    ) != null;
             }
             catch (Exception ex)
             {
-                throw new Exception($"Erreur {ex.Message}");
+                throw new Exception($"Erreur : {ex.Message}");
             }
         }
 
