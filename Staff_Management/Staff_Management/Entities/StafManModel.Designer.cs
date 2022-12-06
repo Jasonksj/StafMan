@@ -1,4 +1,4 @@
-﻿// La génération de code T4 est activée pour le modèle 'E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\Entities\StafManModel.edmx'. 
+﻿// La génération de code T4 est activée pour le modèle 'C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\Entities\StafManModel.edmx'. 
 // Pour activer la génération de code héritée, définissez la valeur de la propriété
 // du concepteur 'Stratégie de génération de code' sur 'ObjectContext hérité'. Cette propriété est disponible dans la fenêtre Propriétés lorsque le modèle
 //  est ouvert dans le concepteur.

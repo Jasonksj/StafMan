@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="StafManModel.Mission" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.Paiement" Width="1.5" PointX="9.75" PointY="4" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.sysdiagram" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="StafManModel.Utilisateur" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="StafManModel.Utilisateur" Width="1.375" PointX="5.25" PointY="9" IsExpanded="true" />
         <AssociationConnector Association="StafManModel.FK__Paiement__IdAbse__4BAC3F29" ManuallyRouted="false" />
         <AssociationConnector Association="StafManModel.FK__Paiement__IdCong__4CA06362" ManuallyRouted="false" />
         <AssociationConnector Association="StafManModel.FK__Contrat__IdEmplo__5070F446" ManuallyRouted="false" />
