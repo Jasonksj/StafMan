@@ -129,8 +129,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\PaiementDAO.cs" />
+=======
+    <Compile Include="DAO\ContratDAO.cs" />
+    <Compile Include="DAO\FonctionDAO.cs" />
+    <Compile Include="DAO\MissionDAO.cs" />
+>>>>>>> 2d980e5b32e23029d7a038560a9a9757fa3e4515
     <Compile Include="Entities\Absence.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
     </Compile>
