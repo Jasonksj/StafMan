@@ -102,7 +102,36 @@ namespace Staff_Management.Services
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
                         );
+                    return null;
                 }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public int Delete(int id)
+        {
+            try
+            {
+                if (Exists(id))
+                    return fonctionDAO.Delete(id);
+                else
+                {
+                    MessageBox.Show
+                        (
+                            $"Cette fonction n'existe pas !",
+                            "Echec",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    return -1;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
             }
         }
     }
