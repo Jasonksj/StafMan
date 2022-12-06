@@ -25,13 +25,20 @@ namespace Staff_Management.Services
 
         public bool Exists(string name)
         {
-            List<Fonction> fonctions = FindAll();
-            List<Fonction> foundFonctions = fonctions.FindAll
-                (
-                    fonction => fonction.Nom == name
-                );
+            try
+            {
+                List<Fonction> fonctions = FindAll();
+                List<Fonction> foundFonctions = fonctions.FindAll
+                    (
+                        fonction => fonction.Nom == name
+                    );
 
-            return foundFonctions.Count > 1;
+                return foundFonctions.Count > 1;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
         }
         public List<Fonction> FindAll()
         {
