@@ -128,6 +128,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ContratDAO.cs" />
     <Compile Include="DAO\FonctionDAO.cs" />
     <Compile Include="Entities\Absence.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
