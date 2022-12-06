@@ -71,7 +71,7 @@ namespace Staff_Management.DAO
         {
             try
             {
-                return staffManag.Employees.FirstOrDefault
+                return staffManag.Employees.SingleOrDefault
                 (
                     mainEmployee => mainEmployee.Id == idEmployee
                 ) != null;
