@@ -130,6 +130,7 @@
   <ItemGroup>
     <Compile Include="DAO\ContratDAO.cs" />
     <Compile Include="DAO\FonctionDAO.cs" />
+    <Compile Include="DAO\MissionDAO.cs" />
     <Compile Include="Entities\Absence.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
     </Compile>
