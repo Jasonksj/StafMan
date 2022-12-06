@@ -8,32 +8,34 @@ using System.Windows;
 
 namespace Staff_Management.DAO
 {
-    public class EmployeeDAO
+    public class PaiementDAO
     {
         StafManEntities staffManag;
 
-        Employee mainEmployee;
+        Paiement mainPaiement;
+        Employee employee1;
 
-        public EmployeeDAO()
+        public PaiementDAO()
         {
             staffManag = new StafManEntities();
-            mainEmployee = new Employee();
+            mainPaiement = new Paiement();
+            employee1 = new Employee();
         }
 
-        public Employee Save(Employee employee)
+        public Paiement Save(Paiement paiement)
         {
             try
             {
-                mainEmployee = employee;
-                staffManag.Employees.Add(mainEmployee);
+                mainPaiement = paiement;
+                staffManag.Paiements.Add(mainPaiement);
                 staffManag.SaveChanges();
-                return mainEmployee;
+                return mainPaiement;
             }
             catch (Exception ex)
             {
                 MessageBox.Show
                     (
-                        $"Enregistrement de l'employé '{employee.Nom}' impossible !\nErreur : {ex.Message}",
+                        $"Paiement de l'employé '{employee1.Nom}' impossible !\nErreur : {ex.Message}",
                         "Echec",
                         MessageBoxButton.OK,
                         MessageBoxImage.Error
@@ -42,23 +44,24 @@ namespace Staff_Management.DAO
             }
         }
 
-        public int Delete(int idEmployee)
+        public int Delete(int idEmployee, DateTime dateDebut)
         {
             try
             {
-                mainEmployee = staffManag.Employees.FirstOrDefault
+                mainPaiement = staffManag.Paiements.FirstOrDefault
                 (
-                    mainEmployee => (mainEmployee.Id == idEmployee)
+                    mainPaiement => mainPaiement.IdEmployee == idEmployee &&
+                                   mainPaiement.DateDebutContrat == dateDebut
                 );
-                staffManag.Employees.Remove(mainEmployee);
+                staffManag.Paiements.Remove(mainPaiement);
                 staffManag.SaveChanges();
-                return mainEmployee.Id;
+                return mainPaiement.IdEmployee;
             }
             catch (Exception ex)
             {
                 MessageBox.Show
                 (
-                        $"Suppression de l'employé impossible !\nErreur : {ex.Message}",
+                        $"Suppression du paiement de l'employé impossible !\nErreur : {ex.Message}",
                         "Echec",
                         MessageBoxButton.OK,
                         MessageBoxImage.Error
@@ -67,14 +70,27 @@ namespace Staff_Management.DAO
             }
         }
 
-        public bool Exist(int idEmployee)
+        public bool Exists(int id, DateTime dateDebut)
         {
             try
             {
-                return staffManag.Employees.FirstOrDefault
-                (
-                    mainEmployee => mainEmployee.Id == idEmployee
-                ) != null;
+                return staffManag.Paiements.SingleOrDefault
+                    (
+                        mainPaiement => mainPaiement.IdEmployee == id &&
+                                   mainPaiement.DateDebutContrat == dateDebut
+                    ) != null;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erreur : {ex.Message}");
+            }
+        }
+
+        public List<Paiement> FindAll()
+        {
+            try
+            {
+                return staffManag.Paiements.ToList();
             }
             catch (Exception ex)
             {
@@ -82,31 +98,19 @@ namespace Staff_Management.DAO
             }
         }
 
-        public List<Employee> FindAll()
+        public Paiement Update(Paiement paiement)
         {
             try
             {
-                return staffManag.Employees.ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Erreur {ex.Message}");
-            }
-        }
-
-        public Employee Update(Employee employee)
-        {
-            try
-            {
-                mainEmployee = employee;
+                mainPaiement = paiement;
                 staffManag.SaveChanges();
-                return mainEmployee;
+                return paiement;
             }
             catch (Exception ex)
             {
                 MessageBox.Show
                     (
-                        $"Modification de l'employé '{employee.Nom}' impossible !\nErreur : {ex.Message}",
+                        $"Modification d'employé '{employee1.Nom}' impossible !\nErreur : {ex.Message}",
                         "Echec",
                         MessageBoxButton.OK,
                         MessageBoxImage.Error
