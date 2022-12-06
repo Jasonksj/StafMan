@@ -36,6 +36,14 @@
     <Reference Include="Aspose.Diagram, Version=22.11.0.0, Culture=neutral, PublicKeyToken=dfdba7ce0555ea8b, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Diagram.22.11.0\lib\net40\Aspose.Diagram.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -120,6 +128,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Absence.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Conge.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Contrat.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Departement.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Employee.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Fonction.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Mission.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Paiement.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sp_helpdiagrams_Result.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\StafManModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StafManModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\StafManModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\StafManModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StafManModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sysdiagram.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Utilisateur.cs">
+      <DependentUpon>StafManModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +196,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EntityDeploy Include="Entities\StafManModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>StafManModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entities\StafManModel.edmx.diagram">
+      <DependentUpon>StafManModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,6 +221,21 @@
     <Folder Include="Controllers\" />
     <Folder Include="DAO\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entities\StafManModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>StafManModel.Context.cs</LastGenOutput>
+      <DependentUpon>StafManModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entities\StafManModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StafManModel.edmx</DependentUpon>
+      <LastGenOutput>StafManModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
