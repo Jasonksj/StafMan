@@ -197,6 +197,7 @@
     <Compile Include="Entities\Utilisateur.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\AbsenceServices.cs" />
     <Compile Include="Services\DepartementServices.cs" />
     <Compile Include="Services\ContratServices.cs" />
     <Compile Include="Services\EmployeeService.cs" />
