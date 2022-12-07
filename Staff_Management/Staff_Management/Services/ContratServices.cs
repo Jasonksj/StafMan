@@ -14,9 +14,12 @@ namespace Staff_Management.Services
     {
         ContratDAO contratDAO;
 
+        MissionServices missionServices;
+
         public ContratServices()
         {
             contratDAO = new ContratDAO();
+            missionServices = new MissionServices();
         }
 
         public List<Contrat> FindAll()
@@ -137,6 +140,21 @@ namespace Staff_Management.Services
                                contrat.IdEmployee == idEmploye &&
                                contrat.DateDebutContrat == dateDebut
                 );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Mission> GetMissionList(Contrat contrat)
+        {
+            try
+            {
+                return missionServices.FindAll().FindAll
+                    (
+                        mission => mission.IdEmployee == contrat.IdEmployee
+                    );
             }
             catch (Exception ex)
             {
