@@ -33,7 +33,7 @@ namespace Staff_Management.DAO
             {
                 MessageBox.Show
                    (
-                       $"Enregistrement impossible de la mission ! '{this.utilisateur.NomUtilisateur}'\nErreur : {ex.Message}",
+                       $"Enregistrement impossible de l'utilisateur '{this.utilisateur.NomUtilisateur}'!\nErreur : {ex.Message}",
                        "Echec",
                        MessageBoxButton.OK,
                        MessageBoxImage.Error

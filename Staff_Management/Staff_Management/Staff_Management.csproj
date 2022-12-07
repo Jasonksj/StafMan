@@ -135,6 +135,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\FonctionControllers.cs" />
+    <Compile Include="Controllers\UtilisateurControllers.cs" />
     <Compile Include="DAO\AbsenceDAO.cs" />
     <Compile Include="DAO\DepartementDAO.cs" />
     <Compile Include="DAO\CongesDAO.cs" />
@@ -279,6 +281,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\Absence\" />
@@ -290,6 +293,9 @@
     <Folder Include="Views\Mission\" />
     <Folder Include="Views\Paiement\" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> 85a5fe97f48242e7c6ace49a2feb3db5e7325aac
   <ItemGroup>
     <Content Include="Entities\StafManModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

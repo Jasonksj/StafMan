@@ -12,9 +12,16 @@ namespace Staff_Management.Services
     public class EmployeeService
     {
         EmployeeDAO employeeDAO;
+
+        ContratServices contratServices;
+
+        MissionServices missionServices;
+
         public EmployeeService()
         {
             employeeDAO = new EmployeeDAO();
+            contratServices = new ContratServices();
+            missionServices = new MissionServices();
         }
 
         public bool Exists(int id)
@@ -157,6 +164,36 @@ namespace Staff_Management.Services
                 return FindAll().FindAll
                     (
                         employee => employee.IdManager == manager.Id
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Contrat> GetContratsList(Employee employee)
+        {
+            try
+            {
+                return contratServices.FindAll().FindAll
+                    (
+                        contrat => contrat.IdEmployee == employee.Id
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Mission> GetAttributedMissionsList(Employee manager)
+        {
+            try
+            {
+                return missionServices.FindAll().FindAll
+                    (
+                        mission => mission.IdManager == manager.Id
                     );
             }
             catch (Exception ex)

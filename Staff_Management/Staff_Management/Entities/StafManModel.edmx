@@ -4,13 +4,14 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="StafManModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="StafManModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Absence">
           <Key>
             <PropertyRef Name="IdAbsence" />
           </Key>
           <Property Name="IdAbsence" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Motif" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="PourcentagePerte" Type="float" Nullable="false" />
         </EntityType>
         <EntityType Name="Conges">
           <Key>
@@ -20,6 +21,7 @@
           <Property Name="DateDebut" Type="datetime" Nullable="false" />
           <Property Name="DateFin" Type="datetime" Nullable="false" />
           <Property Name="Justification" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PourcentageRetrait" Type="float" Nullable="false" />
         </EntityType>
         <EntityType Name="Contrat">
           <Key>
@@ -346,8 +348,7 @@
             <End Role="Utilisateur" EntitySet="Utilisateur" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="StafManModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -358,6 +359,7 @@
           <Property Name="IdAbsence" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Motif" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Paiements" Relationship="Self.FK__Paiement__IdAbse__4BAC3F29" FromRole="Absence" ToRole="Paiement" />
+          <Property Name="PourcentagePerte" Type="Double" Nullable="false" />
         </EntityType>
         <EntityType Name="Conge">
           <Key>
@@ -368,6 +370,7 @@
           <Property Name="DateFin" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Justification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Paiements" Relationship="Self.FK__Paiement__IdCong__4CA06362" FromRole="Conges" ToRole="Paiement" />
+          <Property Name="PourcentageRetrait" Type="Double" Nullable="false" />
         </EntityType>
         <EntityType Name="Contrat">
           <Key>
@@ -735,6 +738,7 @@
           <EntitySetMapping Name="Absences">
             <EntityTypeMapping TypeName="StafManModel.Absence">
               <MappingFragment StoreEntitySet="Absence">
+                <ScalarProperty Name="PourcentagePerte" ColumnName="PourcentagePerte" />
                 <ScalarProperty Name="IdAbsence" ColumnName="IdAbsence" />
                 <ScalarProperty Name="Motif" ColumnName="Motif" />
               </MappingFragment>
@@ -743,6 +747,7 @@
           <EntitySetMapping Name="Conges">
             <EntityTypeMapping TypeName="StafManModel.Conge">
               <MappingFragment StoreEntitySet="Conges">
+                <ScalarProperty Name="PourcentageRetrait" ColumnName="PourcentageRetrait" />
                 <ScalarProperty Name="IdConges" ColumnName="IdConges" />
                 <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
                 <ScalarProperty Name="DateFin" ColumnName="DateFin" />
