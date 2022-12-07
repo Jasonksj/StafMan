@@ -66,7 +66,7 @@ namespace Staff_Management.Services
                 {
                     MessageBox.Show
                         (
-                            $"La fonction '{departement.Nom} existe déjà !",
+                            $"Le departement '{departement.Nom} existe déjà !",
                             "Echec",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
@@ -110,7 +110,7 @@ namespace Staff_Management.Services
                 {
                     MessageBox.Show
                         (
-                            $"La fonction '{departement.Nom} n'existe pas !",
+                            $"Le departement '{departement.Nom} n'existe pas !",
                             "Echec",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
