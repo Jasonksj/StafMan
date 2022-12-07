@@ -186,6 +186,7 @@
     <Compile Include="Entities\Utilisateur.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\EmployeeService.cs" />
     <Compile Include="Services\MissionServices.cs" />
     <Compile Include="Views\Frmlogin.cs">
       <SubType>Form</SubType>
