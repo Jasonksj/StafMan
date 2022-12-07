@@ -9,59 +9,61 @@ using System.Windows.Forms;
 
 namespace Staff_Management.Services
 {
-    public class FonctionServices
+    public  class DepartementServices
     {
-        FonctionDAO fonctionDAO;
+        DepartementDAO departementDAO;
 
-        public FonctionServices()
+        public DepartementServices()
         {
-            fonctionDAO = new FonctionDAO();
+            departementDAO = new DepartementDAO();
         }
 
         public bool Exists(int id)
         {
-            return fonctionDAO.Exists(id);
+            return departementDAO.Exists(id);
+        }
+
+
+        public List<Departement> FindAll()
+        {
+            return departementDAO.FindAll();
         }
 
         public bool Exists(string name)
         {
             try
             {
-                List<Fonction> fonctions = FindAll();
-                List<Fonction> foundFonctions = fonctions.FindAll
+                List<Departement> departements = FindAll();
+                List<Departement> foundDepartements = departements.FindAll
                     (
-                        fonction => fonction.Nom == name
+                        departement => departement.Nom == name
                     );
 
-                return foundFonctions.Count > 1;
+                return foundDepartements.Count > 1;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
-        public List<Fonction> FindAll()
+
+        public Departement FindByName(string name)
         {
-            return fonctionDAO.FindAll();
+            List<Departement> departements = FindAll();
+            return departements.Find(departement => departement.Nom == name);
         }
 
-        public Fonction FindByName(string name)
-        {
-            List<Fonction> fonctions = FindAll();
-            return fonctions.Find(fonction => fonction.Nom == name);
-        }
-
-        public Fonction Save(Fonction fonction)
+        public Departement Save(Departement departement)
         {
             try
             {
-                if (!Exists(fonction.Nom))
-                    return fonctionDAO.Save(fonction);
+                if (!Exists(departement.Nom))
+                    return departementDAO.Save(departement);
                 else
                 {
                     MessageBox.Show
                         (
-                            $"La fonction '{fonction.Nom} existe déjà !",
+                            $"La fonction '{departement.Nom} existe déjà !",
                             "Echec",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
@@ -69,42 +71,43 @@ namespace Staff_Management.Services
                     return null;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
 
-        public List<Fonction> FilterByName(string name)
+        public List<Departement> FilterByName(string name)
         {
             try
             {
                 return FindAll().Where
                 (
-                    fonction => fonction.Nom.IndexOf
+                    departement => departement.Nom.IndexOf
                     (
                         name,
                         StringComparison.CurrentCultureIgnoreCase
                     ) != -1
                 ).ToList();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
 
-        public Fonction Update(Fonction fonction)
+
+        public Departement Update(Departement departement)
         {
             try
             {
-                if (Exists(fonction.IdFonction))
-                    return fonctionDAO.Update(fonction);
+                if (Exists(departement.IdDept))
+                    return departementDAO.Update(departement);
                 else
                 {
                     MessageBox.Show
                         (
-                            $"La fonction '{fonction.Nom} n'existe pas !",
+                            $"La fonction '{departement.Nom} n'existe pas !",
                             "Echec",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
@@ -112,7 +115,7 @@ namespace Staff_Management.Services
                     return null;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception("Erreur : " + ex.Message);
             }
@@ -123,7 +126,7 @@ namespace Staff_Management.Services
             try
             {
                 if (Exists(id))
-                    return fonctionDAO.Delete(id);
+                    return departementDAO.Delete(id);
                 else
                 {
                     MessageBox.Show
@@ -141,5 +144,8 @@ namespace Staff_Management.Services
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
+
+
+
     }
 }
