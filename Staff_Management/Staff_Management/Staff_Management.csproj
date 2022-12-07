@@ -134,6 +134,7 @@
     <Compile Include="DAO\ContratDAO.cs" />
     <Compile Include="DAO\FonctionDAO.cs" />
     <Compile Include="DAO\MissionDAO.cs" />
+    <Compile Include="DAO\UtilisateurDAO.cs" />
     <Compile Include="Entities\Absence.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
     </Compile>
@@ -192,6 +193,12 @@
     <Compile Include="Views\Frmlogin.Designer.cs">
       <DependentUpon>Frmlogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrmSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmSignup.Designer.cs">
+      <DependentUpon>FrmSignup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +217,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmSignup.resx">
+      <DependentUpon>FrmSignup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
