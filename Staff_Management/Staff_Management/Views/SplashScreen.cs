@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Staff_Management.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +35,7 @@ namespace Staff_Management
             label_status.Refresh();
             //code
             Thread.Sleep(3000);
-            progressBar1.Value += 30;
+            progressBar1.Value = 30;
             progressBar1.Refresh();
 
             label_status.Text = "Vérification du compte par défaut ...";

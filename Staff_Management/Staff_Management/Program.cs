@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Staff_Management.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace Staff_Management
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Splash_Screen());
+            
         }
     }
 }
