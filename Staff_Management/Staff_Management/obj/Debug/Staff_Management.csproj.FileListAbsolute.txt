@@ -199,7 +199,7 @@ C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.csproj.CopyComplete
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.exe
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.pdb
-=======
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Frmlogin.resources
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.FrmSignup.resources
 >>>>>>> 98da8cce8a568a2faa4f7834bd7b4ec18ec2c42f
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.MainForm.resources
