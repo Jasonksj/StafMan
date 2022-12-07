@@ -42,14 +42,15 @@ namespace Staff_Management.DAO
             }
         }
 
-        public int Delete(int id, DateTime dateDebut)
+        public int Delete(int id, DateTime dateDebut, string title)
         {
             try
             {
                 contrat = stafMan.Contrats.FirstOrDefault
                     (
                         contrat => contrat.IdEmployee == id &&
-                                   contrat.DateDebutContrat == dateDebut
+                                   contrat.DateDebutContrat == dateDebut &&
+                                   contrat.Titre == title
                     );
                 stafMan.Contrats.Remove(contrat);
                 stafMan.SaveChanges();
@@ -68,14 +69,15 @@ namespace Staff_Management.DAO
             }
         }
 
-        public bool Exists(int id, DateTime dateDebut)
+        public bool Exists(int id, DateTime dateDebut, string title)
         {
             try
             {
                 return stafMan.Contrats.SingleOrDefault
                     (
                         contrat => contrat.IdEmployee == id &&
-                                   contrat.DateDebutContrat == dateDebut
+                                   contrat.DateDebutContrat == dateDebut &&
+                                   contrat.Titre == title
                     ) != null;
             }
             catch (Exception ex)
