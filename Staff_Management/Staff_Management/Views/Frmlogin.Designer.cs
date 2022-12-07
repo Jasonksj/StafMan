@@ -38,12 +38,14 @@
             this.not_account = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(65, 371);
+            this.linkLabel1.Location = new System.Drawing.Point(699, 367);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(82, 13);
             this.linkLabel1.TabIndex = 0;
@@ -54,7 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 371);
+            this.label1.Location = new System.Drawing.Point(693, 367);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 1;
@@ -65,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label2.Location = new System.Drawing.Point(37, 31);
+            this.label2.Location = new System.Drawing.Point(671, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 20);
             this.label2.TabIndex = 2;
@@ -74,7 +76,7 @@
             // label_pass
             // 
             this.label_pass.AutoSize = true;
-            this.label_pass.Location = new System.Drawing.Point(24, 182);
+            this.label_pass.Location = new System.Drawing.Point(658, 178);
             this.label_pass.Name = "label_pass";
             this.label_pass.Size = new System.Drawing.Size(53, 13);
             this.label_pass.TabIndex = 3;
@@ -86,7 +88,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 318);
+            this.button1.Location = new System.Drawing.Point(646, 314);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(187, 23);
             this.button1.TabIndex = 4;
@@ -96,7 +98,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(115, 246);
+            this.checkBox1.Location = new System.Drawing.Point(749, 242);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(102, 17);
             this.checkBox1.TabIndex = 5;
@@ -107,7 +109,7 @@
             // label_username
             // 
             this.label_username.AutoSize = true;
-            this.label_username.Location = new System.Drawing.Point(24, 125);
+            this.label_username.Location = new System.Drawing.Point(658, 121);
             this.label_username.Name = "label_username";
             this.label_username.Size = new System.Drawing.Size(55, 13);
             this.label_username.TabIndex = 6;
@@ -116,7 +118,7 @@
             // not_account
             // 
             this.not_account.AutoSize = true;
-            this.not_account.Location = new System.Drawing.Point(49, 358);
+            this.not_account.Location = new System.Drawing.Point(683, 354);
             this.not_account.Name = "not_account";
             this.not_account.Size = new System.Drawing.Size(117, 13);
             this.not_account.TabIndex = 7;
@@ -125,7 +127,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 141);
+            this.textBox1.Location = new System.Drawing.Point(661, 137);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 20);
             this.textBox1.TabIndex = 8;
@@ -133,16 +135,27 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(27, 198);
+            this.textBox2.Location = new System.Drawing.Point(661, 194);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(159, 20);
             this.textBox2.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.image;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(625, 501);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // Frmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(220, 403);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(875, 429);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.not_account);
@@ -155,9 +168,9 @@
             this.Controls.Add(this.linkLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frmlogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Frmlogin";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +188,6 @@
         private System.Windows.Forms.Label not_account;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

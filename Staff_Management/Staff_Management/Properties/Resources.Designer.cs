@@ -79,5 +79,45 @@ namespace Staff_Management.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image {
+            get {
+                object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap three_man_worker_with_yellow_swoosh_698903_875 {
+            get {
+                object obj = ResourceManager.GetObject("three-man-worker-with-yellow-swoosh_698903-875", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap three_man_worker_with_yellow_swoosh_698903_8751 {
+            get {
+                object obj = ResourceManager.GetObject("three-man-worker-with-yellow-swoosh_698903-8751", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap three_man_worker_with_yellow_swoosh_698903_8752 {
+            get {
+                object obj = ResourceManager.GetObject("three-man-worker-with-yellow-swoosh_698903-8752", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
