@@ -18,8 +18,8 @@ namespace Staff_Management.Views
             string[] genders = { "Male", "Female", "Mix", "No gender", "Other" };
             combo_gender.DataSource = genders;
             combo_gender.SelectedIndex = -1;
-            Panel.Checked = true;
-            D_T_birthday.Value = new DateTime(2000, 8, 16);
+            Check_statut.Checked = true;
+            dateTimePicker1.Value = new DateTime(2000, 8, 16);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
