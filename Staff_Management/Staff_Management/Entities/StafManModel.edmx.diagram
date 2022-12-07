@@ -4,15 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3dea792789b44ce18f668a3b99f9b3f2" Name="Diagram1">
-        <EntityTypeShape EntityType="StafManModel.Absence" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+      <Diagram DiagramId="3dea792789b44ce18f668a3b99f9b3f2" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="StafManModel.Absence" Width="1.5" PointX="18.125" PointY="3.25" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.Conge" Width="1.5" PointX="7.5" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="StafManModel.Contrat" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="StafManModel.Departement" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="StafManModel.Employee" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StafManModel.Contrat" Width="1.5" PointX="1.375" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StafManModel.Departement" Width="1.5" PointX="15.625" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StafManModel.Employee" Width="1.5" PointX="8.125" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.Fonction" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="StafManModel.Mission" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="StafManModel.Paiement" Width="1.625" PointX="9.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="StafManModel.Mission" Width="1.5" PointX="9.375" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StafManModel.Paiement" Width="1.625" PointX="11.75" PointY="4" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.sysdiagram" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.Utilisateur" Width="1.375" PointX="5.25" PointY="9" IsExpanded="true" />
         <AssociationConnector Association="StafManModel.FK__Paiement__IdAbse__4BAC3F29" ManuallyRouted="false" />
