@@ -14,14 +14,33 @@ namespace Staff_Management.Services
     {
         UtilisateurDAO utilisateurDao;
 
+        EmployeeService employeeService;
+
         public UtilisateurServices()
         {
             utilisateurDao = new UtilisateurDAO();
+            employeeService = new EmployeeService();
         }
 
         public List<Utilisateur> FindAll()
         {
             return utilisateurDao.FindAll();
+        }
+
+        public Utilisateur Find(string name, string password)
+        {
+            try
+            {
+                return FindAll().Find
+                    (
+                        utilisateur => utilisateur.NomUtilisateur == name &&
+                                       utilisateur.MotDePasse == password
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
         }
 
         public bool Exists(int id)
@@ -136,13 +155,13 @@ namespace Staff_Management.Services
             }
         }
 
-        public Utilisateur FindByEmployee(Employee employee)
+        public Employee FindByEmployee(Utilisateur utilisateur)
         {
             try
             {
-                return FindAll().Find
+                return employeeService.FindAll().Find
                     (
-                        utilisateur => utilisateur.IdUtilisateur == employee.Id
+                        employee => employee.Id == utilisateur.IdUtilisateur
                     );
             }
             catch (Exception ex)
