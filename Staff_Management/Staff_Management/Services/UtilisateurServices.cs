@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 
 namespace Staff_Management.Services
 {
@@ -66,19 +67,36 @@ namespace Staff_Management.Services
 
         public Utilisateur Save(Utilisateur utilisateur)
         {
+            bool exists = Exists(utilisateur.NomUtilisateur, utilisateur.MotDePasse);
+            bool isMatched = employeeService.Exists(utilisateur.IdUtilisateur);
+
             try
             {
-                if (!Exists(utilisateur.NomUtilisateur, utilisateur.MotDePasse))
+                if (!exists && isMatched )
                     return utilisateurDao.Save(utilisateur);
-                else
+                else 
                 {
-                    MessageBox.Show
-                        (
-                            $"l'utilisateur '{utilisateur.NomUtilisateur}' existe déjà !",
-                            "Echec",
-                            MessageBoxButton.OK,
-                            MessageBoxImage.Error
-                        );
+                    if (!isMatched)
+                    {
+
+                        System.Windows.MessageBox.Show
+                            (
+                                $"l'utilisateur '{utilisateur.NomUtilisateur}' n'a pas de correspondance avec un employe !",
+                                "Echec",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error
+                            );
+                    }
+                    if (exists)
+                    {
+                        System.Windows.MessageBox.Show
+                            (
+                                $"l'utilisateur '{utilisateur.NomUtilisateur}' existe déjà !",
+                                "Echec",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error
+                            );
+                    }
                     return null;
                 }
             }
@@ -96,7 +114,7 @@ namespace Staff_Management.Services
                     return utilisateurDao.Delete(id);
                 else
                 {
-                    MessageBox.Show
+                    System.Windows.MessageBox.Show
                         (
                             "Cet utilisateur n'existe pas !",
                             "Echec",
@@ -120,7 +138,7 @@ namespace Staff_Management.Services
                     return utilisateurDao.Update(utilisateur);
                 else
                 {
-                    MessageBox.Show
+                    System.Windows.MessageBox.Show
                         (
                             $"L'utilisateur '{utilisateur.NomUtilisateur}' n'existe pas !",
                             "Echec",

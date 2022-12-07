@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Staff_Management.Controllers;
+using Staff_Management.Entities;
 
 namespace Staff_Management.Views
 {
     public partial class FrmSignup : Form
     {
+        FonctionControllers fonctionControllers;
+
         public FrmSignup()
         {
             InitializeComponent();
@@ -20,6 +24,7 @@ namespace Staff_Management.Views
             combo_gender.SelectedIndex = -1;
             Check_statut.Checked = true;
             dateTimePicker1.Value = new DateTime(2000, 8, 16);
+            fonctionControllers = new FonctionControllers();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -34,7 +39,7 @@ namespace Staff_Management.Views
 
         private void register_but_Click(object sender, EventArgs e)
         {
-
+            fonctionControllers.Save(textBox2.Text);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
