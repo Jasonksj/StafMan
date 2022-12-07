@@ -13,9 +13,12 @@ namespace Staff_Management.Services
     {
         DepartementDAO departementDAO;
 
+        EmployeeService employeeService;
+
         public DepartementServices()
         {
             departementDAO = new DepartementDAO();
+            employeeService = new EmployeeService();
         }
 
         public bool Exists(int id)
@@ -145,7 +148,34 @@ namespace Staff_Management.Services
             }
         }
 
+        public Employee FindManager(Departement departement)
+        {
+            try
+            {
+                return employeeService.FindAll().Find
+                    (
+                        employe => employe.Id == departement.IdManager
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
 
-
+        public List<Employee> GetEmployeesList(Departement departement)
+        {
+            try
+            {
+                return employeeService.FindAll().FindAll
+                    (
+                        employe => employe.IdDept == departement.IdDept           
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
     }
 }
