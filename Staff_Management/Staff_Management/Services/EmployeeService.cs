@@ -11,7 +11,7 @@ namespace Staff_Management.Services
 {
     public class EmployeeService
     {
-        public EmployeeDAO employeeDAO;
+        EmployeeDAO employeeDAO;
         public EmployeeService()
         {
             employeeDAO = new EmployeeDAO();
@@ -128,6 +128,36 @@ namespace Staff_Management.Services
                         StringComparison.CurrentCultureIgnoreCase
                     ) != -1
                 ).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public Employee FindTheManagerOf(Employee employee)
+        {
+            try
+            {
+                return FindAll().Find
+                    (
+                        manager => manager.Id == employee.IdManager
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Employee> FindTheEmployeesOf(Employee manager)
+        {
+            try
+            {
+                return FindAll().FindAll
+                    (
+                        employee => employee.IdManager == manager.Id
+                    );
             }
             catch (Exception ex)
             {
