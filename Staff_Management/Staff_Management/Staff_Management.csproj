@@ -135,6 +135,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\AbsenceDAO.cs" />
+    <Compile Include="DAO\DepartementDAO.cs" /> 
+    <Compile Include="DAO\CongesDAO.cs" /> 
     <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\PaiementDAO.cs" />
     <Compile Include="DAO\ContratDAO.cs" />
