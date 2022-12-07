@@ -157,9 +157,7 @@
             this.Name = "Frmlogin";
 <<<<<<< Updated upstream
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-=======
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
->>>>>>> Stashed changes
             this.Text = "Frmlogin";
             this.ResumeLayout(false);
             this.PerformLayout();
