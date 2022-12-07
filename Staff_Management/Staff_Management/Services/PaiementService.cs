@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Staff_Management.Services
 {
-    internal class PaiementService
+    public class PaiementService
     {
+
     }
 }
