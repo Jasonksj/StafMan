@@ -17,14 +17,7 @@ namespace Staff_Management.Entities
         public int IdUtilisateur { get; set; }
         public string NomUtilisateur { get; set; }
         public string MotDePasse { get; set; }
-
-        public Utilisateur(int idUtilisateur, string nomUtilisateur, string motDePasse)
-        {
-            IdUtilisateur = idUtilisateur;
-            NomUtilisateur = nomUtilisateur;
-            MotDePasse = motDePasse;
-        }
-
+    
         public virtual Employee Employee { get; set; }
     }
 }

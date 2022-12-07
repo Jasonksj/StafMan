@@ -19,19 +19,7 @@ namespace Staff_Management.Entities
         {
             this.Paiements = new HashSet<Paiement>();
         }
-
-        public Mission(float montant, DateTime dateDebut, DateTime dateFin, string intitule, int idManager, int idEmployee, DateTime dateDebutContrat)
-        {
-            this.Paiements = new HashSet<Paiement>();
-            Montant = montant;
-            DateDebut = dateDebut;
-            DateFin = dateFin;
-            Intitule = intitule;
-            IdManager = idManager;
-            IdEmployee = idEmployee;
-            DateDebutContrat = dateDebutContrat;
-        }
-
+    
         public int IdMission { get; set; }
         public float Montant { get; set; }
         public System.DateTime DateDebut { get; set; }

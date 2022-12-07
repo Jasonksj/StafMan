@@ -19,14 +19,7 @@ namespace Staff_Management.Entities
         {
             this.Contrats = new HashSet<Contrat>();
         }
-
-        public Fonction(string nom, ICollection<Contrat> contrats)
-        {
-            this.Contrats = new HashSet<Contrat>();
-            Nom = nom;
-            Contrats = contrats;
-        }
-
+    
         public int IdFonction { get; set; }
         public string Nom { get; set; }
     

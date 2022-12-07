@@ -20,17 +20,7 @@ namespace Staff_Management.Entities
         public Nullable<int> IdAbsence { get; set; }
         public Nullable<int> IdConges { get; set; }
         public Nullable<int> IdMission { get; set; }
-
-        public Paiement(int idEmployee, DateTime dateVersement, DateTime dateDebutContrat, int? idAbsence, int? idConges, int? idMission)
-        {
-            IdEmployee = idEmployee;
-            DateVersement = dateVersement;
-            DateDebutContrat = dateDebutContrat;
-            IdAbsence = idAbsence;
-            IdConges = idConges;
-            IdMission = idMission;
-        }
-
+    
         public virtual Absence Absence { get; set; }
         public virtual Conge Conge { get; set; }
         public virtual Contrat Contrat { get; set; }
