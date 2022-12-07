@@ -135,6 +135,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AbsenceControllers.cs" />
     <Compile Include="Controllers\FonctionControllers.cs" />
     <Compile Include="Controllers\UtilisateurControllers.cs" />
     <Compile Include="DAO\AbsenceDAO.cs" />
@@ -283,7 +284,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Views\Absence\" />
     <Folder Include="Views\Conges\" />
     <Folder Include="Views\Contrat\" />
