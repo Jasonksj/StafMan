@@ -17,7 +17,8 @@ namespace Staff_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Splash_Screen());
+            new Splash_Screen().Show();
+            Application.Run();
             
         }
     }

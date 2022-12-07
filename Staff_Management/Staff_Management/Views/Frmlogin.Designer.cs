@@ -155,7 +155,6 @@
             this.Controls.Add(this.linkLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frmlogin";
-<<<<<<< Updated upstream
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Frmlogin";
