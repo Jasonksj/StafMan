@@ -131,3 +131,5 @@ C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.pdb
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Frmlogin.resources
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.FrmSignup.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Frmlogin.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.FrmSignup.resources
