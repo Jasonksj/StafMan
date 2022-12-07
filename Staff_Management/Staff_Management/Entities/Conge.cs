@@ -24,6 +24,7 @@ namespace Staff_Management.Entities
         public System.DateTime DateDebut { get; set; }
         public System.DateTime DateFin { get; set; }
         public string Justification { get; set; }
+        public double PourcentageRetrait { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Paiement> Paiements { get; set; }

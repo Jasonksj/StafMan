@@ -22,6 +22,7 @@ namespace Staff_Management.Entities
     
         public int IdAbsence { get; set; }
         public string Motif { get; set; }
+        public double PourcentagePerte { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Paiement> Paiements { get; set; }
