@@ -61,10 +61,7 @@ E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.csproj.CopyComplete
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.exe
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.pdb
-<<<<<<< Updated upstream
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Splash_Screen.resources
-=======
->>>>>>> Stashed changes
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.exe.config
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.exe
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.pdb
@@ -207,12 +204,8 @@ C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.xml
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.MainForm.resources
->>>>>>> e8de72574e9f67f05914697571c1d94294d1af77
-<<<<<<< HEAD
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Organigramme.resources
-=======
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\WinFormAnimation.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.xml
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
->>>>>>> 85a5fe97f48242e7c6ace49a2feb3db5e7325aac
