@@ -280,6 +280,10 @@
       <DependentUpon>StafManModel.edmx</DependentUpon>
       <LastGenOutput>StafManModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\three-man-worker-with-yellow-swoosh_698903-8752.png" />
+    <None Include="Resources\three-man-worker-with-yellow-swoosh_698903-8751.png" />
+    <None Include="Resources\three-man-worker-with-yellow-swoosh_698903-875.png" />
+    <None Include="Resources\image.png" />
     <None Include="Resources\icons8_minimize_window_32.png" />
     <None Include="Resources\icons8_close_window_32.png" />
   </ItemGroup>
