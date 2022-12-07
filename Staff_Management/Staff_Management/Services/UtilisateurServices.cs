@@ -173,7 +173,7 @@ namespace Staff_Management.Services
             }
         }
 
-        public Employee FindByEmployee(Utilisateur utilisateur)
+        public Employee FindCorrespondingEmployee(Utilisateur utilisateur)
         {
             try
             {
