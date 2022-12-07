@@ -93,40 +93,6 @@ namespace Staff_Management.DAO
             }
         }
 
-        public List<Utilisateur> FilterByName(string name)
-        {
-            try
-            {
-                return staffManag.Utilisateurs.Where
-                    (
-                        utilisateur => utilisateur.NomUtilisateur.IndexOf
-                        (
-                            name,
-                            StringComparison.CurrentCultureIgnoreCase
-                        ) != -1
-                    ).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Erreur : {ex.Message}");
-            }
-        }
-
-        public List<Utilisateur> FindByUtilisateur(Employee employee)
-        {
-            try
-            {
-                return staffManag.Utilisateurs.Where
-                    (
-                        utilisateur => utilisateur.Employee == employee
-                    ).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Erreur : {ex.Message}");
-            }
-        }
-
         public Utilisateur Update(Utilisateur utilisateur)
         {
             try
