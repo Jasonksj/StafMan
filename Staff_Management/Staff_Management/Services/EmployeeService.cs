@@ -30,7 +30,7 @@ namespace Staff_Management.Services
                     mainEmployee => mainEmployee.Nom == name
                 );
 
-            return foundEmployees.Count > 1;
+            return foundEmployees.Count > 0;
         }
 
         public Employee Save(Employee employee)

@@ -33,7 +33,7 @@ namespace Staff_Management.Services
                         fonction => fonction.Nom == name
                     );
 
-                return foundFonctions.Count > 1;
+                return foundFonctions.Count > 0;
             }
             catch(Exception ex)
             {
