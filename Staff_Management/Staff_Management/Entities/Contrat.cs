@@ -11,7 +11,8 @@ namespace Staff_Management.Entities
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Security.Cryptography.X509Certificates;
+
     public partial class Contrat
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,7 +21,31 @@ namespace Staff_Management.Entities
             this.Missions = new HashSet<Mission>();
             this.Paiements = new HashSet<Paiement>();
         }
-    
+
+        public Contrat
+            (
+                int idEmployee,
+                DateTime dateDebutContrat, 
+                string titre, 
+                string niveauHierachique,
+                string type,
+                float salaire,
+                DateTime dateFin,
+                int IdFonction
+            )
+        {
+            this.Missions = new HashSet<Mission>();
+            this.Paiements = new HashSet<Paiement>();
+            IdEmployee = idEmployee;
+            DateDebutContrat = dateDebutContrat;
+            Titre = titre;
+            NiveauHierachique = niveauHierachique;
+            Type = type;
+            Salaire = salaire;
+            DateFin = dateFin;
+            this.IdFonction = IdFonction;
+        }
+
         public int IdEmployee { get; set; }
         public System.DateTime DateDebutContrat { get; set; }
         public string Titre { get; set; }

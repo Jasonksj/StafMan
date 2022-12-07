@@ -19,7 +19,15 @@ namespace Staff_Management.Entities
         {
             this.Paiements = new HashSet<Paiement>();
         }
-    
+
+        public Conge(DateTime dateDebut, DateTime dateFin, string justification)
+        {
+            this.Paiements = new HashSet<Paiement>();
+            DateDebut = dateDebut;
+            DateFin = dateFin;
+            Justification = justification;
+        }
+
         public int IdConges { get; set; }
         public System.DateTime DateDebut { get; set; }
         public System.DateTime DateFin { get; set; }

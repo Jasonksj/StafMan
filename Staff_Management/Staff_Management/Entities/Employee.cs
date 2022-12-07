@@ -22,7 +22,23 @@ namespace Staff_Management.Entities
             this.Employees1 = new HashSet<Employee>();
             this.Missions = new HashSet<Mission>();
         }
-    
+
+        public Employee(string nom, string email, byte[] picture, string adresse, string telephone, DateTime dateEmbauche, int idDept, int? idManager)
+        {
+            this.Contrats = new HashSet<Contrat>();
+            this.Departements = new HashSet<Departement>();
+            this.Employees1 = new HashSet<Employee>();
+            this.Missions = new HashSet<Mission>();
+            Nom = nom;
+            Email = email;
+            Picture = picture;
+            Adresse = adresse;
+            Telephone = telephone;
+            DateEmbauche = dateEmbauche;
+            IdDept = idDept;
+            IdManager = idManager;
+        }
+
         public int Id { get; set; }
         public string Nom { get; set; }
         public string Email { get; set; }

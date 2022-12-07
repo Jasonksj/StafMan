@@ -19,7 +19,14 @@ namespace Staff_Management.Entities
         {
             this.Employees = new HashSet<Employee>();
         }
-    
+
+        public Departement(string nom, int idManager)
+        {
+            this.Employees = new HashSet<Employee>();
+            Nom = nom;
+            IdManager = idManager;
+        }
+
         public int IdDept { get; set; }
         public string Nom { get; set; }
         public int IdManager { get; set; }

@@ -19,6 +19,12 @@ namespace Staff_Management.Entities
         {
             this.Paiements = new HashSet<Paiement>();
         }
+
+        public Absence(string motif)
+        {
+            this.Paiements = new HashSet<Paiement>();
+            Motif = motif;
+        }
     
         public int IdAbsence { get; set; }
         public string Motif { get; set; }
