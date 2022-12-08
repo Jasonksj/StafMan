@@ -102,19 +102,27 @@ namespace Staff_Management.Services
         {
             try
             {
-                if (Exists(absence.IdAbsence))
+                bool hasThisMotifHere = Exists(absence.Motif);
+                bool hasThisIdHere = Exists(absence.IdAbsence);
+                if (hasThisIdHere && !hasThisMotifHere)
                     return absenceDAO.Update(absence);
-                else
-                {
+                else if (!hasThisIdHere)
                     MessageBox.Show
                         (
-                            $"L'absence ayant pour motif '{absence.IdAbsence}' n'existe pas",
+                            $"Ce type d'absence n'existe pas !",
                             "Echec",
                             MessageBoxButton.OK,
                             MessageBoxImage.Error
                         );
-                    return null;
-                }
+                else if (hasThisMotifHere)
+                    MessageBox.Show
+                        (
+                            $"Ce motif d'absence existe déjà !",
+                            "Echec",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Error
+                        );
+                return null;
             }
             catch (Exception ex)
             {

@@ -123,7 +123,6 @@ namespace Staff_Management.Services
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
                         );
-                    return null;
                 }
                 else if (hasThisNameHere)
                 {
@@ -134,8 +133,8 @@ namespace Staff_Management.Services
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
                         );
-                    return null;
                 }
+                return null;
             }
             catch(Exception ex)
             {

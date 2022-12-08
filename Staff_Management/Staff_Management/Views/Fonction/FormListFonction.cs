@@ -57,7 +57,7 @@ namespace Staff_Management.Views.Fonction
         {
             PopulateDataGridView(fonctionControllers.FindAll());
             CountItems();
-            txtSearch.Select();
+            txtSearch.SelectAll();
         }
 
         private void PopulateDataGridView(List<Entities.Fonction> fonctions)

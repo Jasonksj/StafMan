@@ -1,6 +1,7 @@
 ﻿using Staff_Management.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -101,6 +102,7 @@ namespace Staff_Management.DAO
             try
             {
                 conge = conges;
+                staffManag.Conges.AddOrUpdate(conge);
                 staffManag.SaveChanges();
                 return conge;
             }

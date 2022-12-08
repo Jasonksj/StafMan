@@ -104,10 +104,11 @@ namespace Staff_Management.Services
         {
             try
             {
-                if (Exists(conge.IdConges))
+                bool hasThisJustificationHere = Exists(conge.Justification);
+                bool hasThisIdHere = Exists(conge.IdConges);
+                if (hasThisIdHere && !hasThisJustificationHere)
                     return congesDAO.Update(conge);
-                else
-                {
+                else if (!hasThisIdHere)
                     MessageBox.Show
                         (
                             $"Le congé modifié n'existe pas !",
@@ -115,8 +116,15 @@ namespace Staff_Management.Services
                             MessageBoxButton.OK,
                             MessageBoxImage.Error
                         );
-                    return null;
-                }
+                else if (hasThisJustificationHere)
+                    MessageBox.Show
+                        (
+                            $"Cette justification existe déjà !",
+                            "Echec",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Error
+                        );
+                return null;
             }
             catch (Exception ex)
             {

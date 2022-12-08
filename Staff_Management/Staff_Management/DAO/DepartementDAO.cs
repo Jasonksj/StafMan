@@ -1,6 +1,7 @@
 ﻿using Staff_Management.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -97,6 +98,7 @@ namespace Staff_Management.DAO
             try
             {
                 this.departement = departement;
+                stafMan.Departements.AddOrUpdate(this.departement);
                 stafMan.SaveChanges();
                 return this.departement;
             }
