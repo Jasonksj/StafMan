@@ -25,6 +25,54 @@ namespace Staff_Management.Services
             return missionDAO.FindAll();
         }
 
+        public List<Mission> FilterByStartDate(DateTime startDate)
+        {
+            try
+            {
+                return FindAll().FindAll(mission => mission.DateDebut == startDate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur " + ex.Message);
+            }
+        }
+
+        public List<Mission> FilterByEndDate(DateTime endDate)
+        {
+            try
+            {
+                return FindAll().FindAll(mission => mission.DateFin == endDate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur " + ex.Message);
+            }
+        }
+
+        public List<Mission> FilterByAccordStartDate(DateTime accordStartDate)
+        {
+            try
+            {
+                return FindAll().FindAll(mission => mission.DateDebutContrat == accordStartDate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur " + ex.Message);
+            }
+        }
+
+        public List<Mission> FilterByTitle(string title)
+        {
+            try
+            {
+                return FindAll().FindAll(mission => mission.Intitule == title);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur " + ex.Message);
+            }
+        }
+
         public Mission Save(Mission mission)
         {
             try
