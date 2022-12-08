@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Absences">
       <EntityTypeMapping TypeName="StafManModel.Absence">
         <MappingFragment StoreEntitySet="Absence">
+          <ScalarProperty Name="PourcentagePerte" ColumnName="PourcentagePerte" />
           <ScalarProperty Name="IdAbsence" ColumnName="IdAbsence" />
           <ScalarProperty Name="Motif" ColumnName="Motif" />
         </MappingFragment>
@@ -12,6 +13,7 @@
     <EntitySetMapping Name="Conges">
       <EntityTypeMapping TypeName="StafManModel.Conge">
         <MappingFragment StoreEntitySet="Conges">
+          <ScalarProperty Name="PourcentageRetrait" ColumnName="PourcentageRetrait" />
           <ScalarProperty Name="IdConges" ColumnName="IdConges" />
           <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
           <ScalarProperty Name="DateFin" ColumnName="DateFin" />

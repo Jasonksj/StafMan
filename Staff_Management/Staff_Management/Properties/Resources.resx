@@ -121,19 +121,52 @@
   <data name="three-man-worker-with-yellow-swoosh_698903-8751" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\three-man-worker-with-yellow-swoosh_698903-8751.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_close_window_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_close_window_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="three-man-worker-with-yellow-swoosh_698903-8752" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\three-man-worker-with-yellow-swoosh_698903-8752.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="three-man-worker-with-yellow-swoosh_698903-875" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\three-man-worker-with-yellow-swoosh_698903-875.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GHGH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GHGH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_minimize_window_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_minimize_window_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="three-man-worker-with-yellow-swoosh_698903-8752" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\three-man-worker-with-yellow-swoosh_698903-8752.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="recruit-agent-analyzing-candidates_74855-4565" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recruit-agent-analyzing-candidates_74855-4565.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-man-worker-with-yellow-swoosh_698903-875" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\three-man-worker-with-yellow-swoosh_698903-875.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_menu_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_menu_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="240_F_80460617_APNj6YyfrqPH6e23CnjvmDLbxmeVqZJr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\240_F_80460617_APNj6YyfrqPH6e23CnjvmDLbxmeVqZJr.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-man-worker-with-yellow-swoosh_698903-8753" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\three-man-worker-with-yellow-swoosh_698903-8753.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personnel-management-concept_277904-11919" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnel-management-concept_277904-11919.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UUU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UUU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="businessman-top-looking-into-telescope-employees-business-opportunity-bizopp-franchising-distribution-concept-white-background_335657-2028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\businessman-top-looking-into-telescope-employees-business-opportunity-bizopp-franchising-distribution-concept-white-background_335657-2028.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_close_window_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_close_window_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personnel-management-concept_277904-119191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnel-management-concept_277904-119191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
