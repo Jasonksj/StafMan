@@ -29,42 +29,128 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_paiement = new System.Windows.Forms.Button();
+            this.btn_contrat = new System.Windows.Forms.Button();
+            this.btn_fonction = new System.Windows.Forms.Button();
+            this.btn_dept = new System.Windows.Forms.Button();
+            this.pnlbat = new System.Windows.Forms.Panel();
+            this.btn_employee = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.main = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.btn_paiement);
+            this.panel1.Controls.Add(this.btn_contrat);
+            this.panel1.Controls.Add(this.btn_fonction);
+            this.panel1.Controls.Add(this.btn_dept);
+            this.panel1.Controls.Add(this.pnlbat);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_employee);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 691);
+            this.panel1.Size = new System.Drawing.Size(151, 691);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // btn_paiement
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 57);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Employee";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_paiement.FlatAppearance.BorderSize = 0;
+            this.btn_paiement.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_paiement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_paiement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_paiement.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_paiement.ForeColor = System.Drawing.Color.White;
+            this.btn_paiement.Location = new System.Drawing.Point(12, 426);
+            this.btn_paiement.Name = "btn_paiement";
+            this.btn_paiement.Size = new System.Drawing.Size(139, 57);
+            this.btn_paiement.TabIndex = 5;
+            this.btn_paiement.Text = "Paiement";
+            this.btn_paiement.UseVisualStyleBackColor = true;
+            this.btn_paiement.Click += new System.EventHandler(this.btn_paiement_Click);
+            // 
+            // btn_contrat
+            // 
+            this.btn_contrat.FlatAppearance.BorderSize = 0;
+            this.btn_contrat.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_contrat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_contrat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_contrat.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_contrat.ForeColor = System.Drawing.Color.White;
+            this.btn_contrat.Location = new System.Drawing.Point(12, 501);
+            this.btn_contrat.Name = "btn_contrat";
+            this.btn_contrat.Size = new System.Drawing.Size(139, 57);
+            this.btn_contrat.TabIndex = 4;
+            this.btn_contrat.Text = "Contrat";
+            this.btn_contrat.UseVisualStyleBackColor = true;
+            this.btn_contrat.Click += new System.EventHandler(this.btn_contrat_Click);
+            // 
+            // btn_fonction
+            // 
+            this.btn_fonction.FlatAppearance.BorderSize = 0;
+            this.btn_fonction.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_fonction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_fonction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fonction.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_fonction.ForeColor = System.Drawing.Color.White;
+            this.btn_fonction.Location = new System.Drawing.Point(12, 334);
+            this.btn_fonction.Name = "btn_fonction";
+            this.btn_fonction.Size = new System.Drawing.Size(142, 57);
+            this.btn_fonction.TabIndex = 3;
+            this.btn_fonction.Text = "Fonction";
+            this.btn_fonction.UseVisualStyleBackColor = true;
+            this.btn_fonction.Click += new System.EventHandler(this.btn_fonction_Click);
+            // 
+            // btn_dept
+            // 
+            this.btn_dept.FlatAppearance.BorderSize = 0;
+            this.btn_dept.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_dept.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_dept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dept.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dept.ForeColor = System.Drawing.Color.White;
+            this.btn_dept.Location = new System.Drawing.Point(12, 254);
+            this.btn_dept.Name = "btn_dept";
+            this.btn_dept.Size = new System.Drawing.Size(139, 57);
+            this.btn_dept.TabIndex = 2;
+            this.btn_dept.Text = "Departement";
+            this.btn_dept.UseVisualStyleBackColor = true;
+            this.btn_dept.Click += new System.EventHandler(this.btn_dept_Click);
+            // 
+            // pnlbat
+            // 
+            this.pnlbat.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pnlbat.Location = new System.Drawing.Point(3, 176);
+            this.pnlbat.Name = "pnlbat";
+            this.pnlbat.Size = new System.Drawing.Size(11, 57);
+            this.pnlbat.TabIndex = 1;
+            // 
+            // btn_employee
+            // 
+            this.btn_employee.FlatAppearance.BorderSize = 0;
+            this.btn_employee.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_employee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_employee.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employee.ForeColor = System.Drawing.Color.White;
+            this.btn_employee.Location = new System.Drawing.Point(12, 176);
+            this.btn_employee.Name = "btn_employee";
+            this.btn_employee.Size = new System.Drawing.Size(139, 57);
+            this.btn_employee.TabIndex = 0;
+            this.btn_employee.Text = "Employee";
+            this.btn_employee.UseVisualStyleBackColor = true;
+            this.btn_employee.Click += new System.EventHandler(this.btn_employee_Click);
             // 
             // panel2
             // 
@@ -72,19 +158,20 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Location = new System.Drawing.Point(151, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1309, 28);
+            this.panel2.Size = new System.Drawing.Size(1358, 28);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // main
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(200, 28);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1309, 663);
-            this.panel3.TabIndex = 2;
+            this.main.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.main.Controls.Add(this.pictureBox2);
+            this.main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main.Location = new System.Drawing.Point(151, 28);
+            this.main.Name = "main";
+            this.main.Size = new System.Drawing.Size(1358, 663);
+            this.main.TabIndex = 2;
             // 
             // button3
             // 
@@ -92,7 +179,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::Staff_Management.Properties.Resources.icons8_minimize_window_32;
-            this.button3.Location = new System.Drawing.Point(1241, 0);
+            this.button3.Location = new System.Drawing.Point(1290, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(31, 25);
             this.button3.TabIndex = 1;
@@ -105,7 +192,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::Staff_Management.Properties.Resources.icons8_close_window_32;
-            this.button2.Location = new System.Drawing.Point(1278, 0);
+            this.button2.Location = new System.Drawing.Point(1327, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(31, 25);
             this.button2.TabIndex = 0;
@@ -116,27 +203,40 @@
             // 
             this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8752;
             this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-27, -21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 136);
+            this.pictureBox1.Size = new System.Drawing.Size(178, 142);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Staff_Management.Properties.Resources.personnel_management_concept_277904_11919;
+            this.pictureBox2.Location = new System.Drawing.Point(549, 263);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(654, 465);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 691);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.main);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.main.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,10 +245,16 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btn_employee;
+        private System.Windows.Forms.Panel main;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_paiement;
+        private System.Windows.Forms.Button btn_contrat;
+        private System.Windows.Forms.Button btn_fonction;
+        private System.Windows.Forms.Button btn_dept;
+        private System.Windows.Forms.Panel pnlbat;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

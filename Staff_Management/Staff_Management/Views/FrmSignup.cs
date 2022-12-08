@@ -39,7 +39,7 @@ namespace Staff_Management.Views
 
         private void register_but_Click(object sender, EventArgs e)
         {
-            fonctionControllers.Save(textBox2.Text);
+            //fonctionControllers.Save(textBox2.Text);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

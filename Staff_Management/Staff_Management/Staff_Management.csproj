@@ -47,6 +47,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -202,6 +205,60 @@
     <Compile Include="Services\EmployeeService.cs" />
     <Compile Include="Services\MissionServices.cs" />
     <Compile Include="Services\UtilisateurServices.cs" />
+    <Compile Include="Views\Absence\FormAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Absence\FormAbsence.Designer.cs">
+      <DependentUpon>FormAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Absence\FormListAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Absence\FormListAbsence.Designer.cs">
+      <DependentUpon>FormListAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conges\FormConges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conges\FormConges.Designer.cs">
+      <DependentUpon>FormConges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conges\FormListConges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conges\FormListConges.Designer.cs">
+      <DependentUpon>FormListConges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contrat\FormContrat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Contrat\FormContrat.Designer.cs">
+      <DependentUpon>FormContrat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contrat\FormListContrat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Contrat\FormListContrat.Designer.cs">
+      <DependentUpon>FormListContrat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Departement\FormDepartement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Departement\FormDepartement.Designer.cs">
+      <DependentUpon>FormDepartement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Departement\FormListDepartement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Departement\FormListDepartement.Designer.cs">
+      <DependentUpon>FormListDepartement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\FormAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\FormAddEmployee.Designer.cs">
+      <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Frmlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +276,12 @@
     </Compile>
     <Compile Include="Views\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mission\FormMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mission\FormMission.Designer.cs">
+      <DependentUpon>FormMission.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Organigramme.cs">
       <SubType>Form</SubType>
@@ -245,6 +308,27 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Absence\FormAbsence.resx">
+      <DependentUpon>FormAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conges\FormConges.resx">
+      <DependentUpon>FormConges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Contrat\FormContrat.resx">
+      <DependentUpon>FormContrat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Contrat\FormListContrat.resx">
+      <DependentUpon>FormListContrat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Departement\FormDepartement.resx">
+      <DependentUpon>FormDepartement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Departement\FormListDepartement.resx">
+      <DependentUpon>FormListDepartement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\FormAddEmployee.resx">
+      <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Frmlogin.resx">
       <DependentUpon>Frmlogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mission\FormMission.resx">
+      <DependentUpon>FormMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Organigramme.resx">
       <DependentUpon>Organigramme.cs</DependentUpon>
@@ -281,21 +368,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Views\Absence\" />
-    <Folder Include="Views\Conges\" />
-    <Folder Include="Views\Contrat\" />
-    <Folder Include="Views\Departement\" />
-    <Folder Include="Views\Employee\" />
     <Folder Include="Views\Fonction\" />
-    <Folder Include="Views\Mission\" />
     <Folder Include="Views\Paiement\" />
   </ItemGroup>
-=======
   <ItemGroup />
->>>>>>> 85a5fe97f48242e7c6ace49a2feb3db5e7325aac
   <ItemGroup>
     <Content Include="Entities\StafManModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -307,6 +384,17 @@
       <DependentUpon>StafManModel.edmx</DependentUpon>
       <LastGenOutput>StafManModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\DD.png" />
+    <None Include="Resources\personnel-management-concept_277904-119191.png" />
+    <None Include="Resources\FF.png" />
+    <None Include="Resources\personnel-management-concept_277904-11919.png" />
+    <None Include="Resources\GHGH.png" />
+    <None Include="Resources\three-man-worker-with-yellow-swoosh_698903-8753.png" />
+    <None Include="Resources\icons8_menu_50px.png" />
+    <None Include="Resources\recruit-agent-analyzing-candidates_74855-4565.png" />
+    <None Include="Resources\240_F_80460617_APNj6YyfrqPH6e23CnjvmDLbxmeVqZJr.jpg" />
+    <None Include="Resources\UUU.png" />
+    <None Include="Resources\businessman-top-looking-into-telescope-employees-business-opportunity-bizopp-franchising-distribution-concept-white-background_335657-2028.png" />
     <None Include="Resources\three-man-worker-with-yellow-swoosh_698903-8752.png" />
     <None Include="Resources\three-man-worker-with-yellow-swoosh_698903-8751.png" />
     <None Include="Resources\three-man-worker-with-yellow-swoosh_698903-875.png" />

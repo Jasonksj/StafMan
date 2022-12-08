@@ -61,10 +61,7 @@ E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.csproj.CopyComplete
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.exe
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.pdb
-<<<<<<< Updated upstream
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Splash_Screen.resources
-=======
->>>>>>> Stashed changes
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.exe.config
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.exe
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.pdb
@@ -131,7 +128,6 @@ C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.pdb
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Frmlogin.resources
 C:\Users\LENOVO\source\repos\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.FrmSignup.resources
-<<<<<<< HEAD
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.exe.config
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.exe
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.pdb
@@ -201,18 +197,22 @@ C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.pdb
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Frmlogin.resources
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.FrmSignup.resources
->>>>>>> 98da8cce8a568a2faa4f7834bd7b4ec18ec2c42f
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.dll
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\WinFormAnimation.dll
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.xml
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.MainForm.resources
->>>>>>> e8de72574e9f67f05914697571c1d94294d1af77
-<<<<<<< HEAD
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Organigramme.resources
-=======
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\WinFormAnimation.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.xml
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
->>>>>>> 85a5fe97f48242e7c6ace49a2feb3db5e7325aac
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Absence.FormAbsence.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Conges.FormConges.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormContrat.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Departement.FormDepartement.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Departement.FormListDepartement.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\Guna.UI2.dll
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormMission.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Employee.FormAddEmployee.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormListContrat.resources

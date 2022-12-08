@@ -6,6 +6,7 @@
     </Key>
     <Property Name="IdAbsence" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Motif" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="PourcentagePerte" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="Conges">
     <Key>
@@ -15,6 +16,7 @@
     <Property Name="DateDebut" Type="datetime" Nullable="false" />
     <Property Name="DateFin" Type="datetime" Nullable="false" />
     <Property Name="Justification" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PourcentageRetrait" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="Contrat">
     <Key>

@@ -17,11 +17,7 @@ namespace Staff_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            new Organigramme().Show();
-=======
-            new FrmSignup().Show();
->>>>>>> 85a5fe97f48242e7c6ace49a2feb3db5e7325aac
+            new MainForm().Show();
             Application.Run();
         }
     }

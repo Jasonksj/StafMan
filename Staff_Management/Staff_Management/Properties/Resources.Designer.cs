@@ -63,9 +63,70 @@ namespace Staff_Management.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _240_F_80460617_APNj6YyfrqPH6e23CnjvmDLbxmeVqZJr {
+            get {
+                object obj = ResourceManager.GetObject("240_F_80460617_APNj6YyfrqPH6e23CnjvmDLbxmeVqZJr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap businessman_top_looking_into_telescope_employees_business_opportunity_bizopp_franchising_distribution_concept_white_background_335657_2028 {
+            get {
+                object obj = ResourceManager.GetObject("businessman-top-looking-into-telescope-employees-business-opportunity-bizopp-fran" +
+                        "chising-distribution-concept-white-background_335657-2028", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DD {
+            get {
+                object obj = ResourceManager.GetObject("DD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FF {
+            get {
+                object obj = ResourceManager.GetObject("FF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GHGH {
+            get {
+                object obj = ResourceManager.GetObject("GHGH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_window_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_close_window_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_50px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_menu_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +147,36 @@ namespace Staff_Management.Properties {
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap personnel_management_concept_277904_11919 {
+            get {
+                object obj = ResourceManager.GetObject("personnel-management-concept_277904-11919", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap personnel_management_concept_277904_119191 {
+            get {
+                object obj = ResourceManager.GetObject("personnel-management-concept_277904-119191", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recruit_agent_analyzing_candidates_74855_4565 {
+            get {
+                object obj = ResourceManager.GetObject("recruit-agent-analyzing-candidates_74855-4565", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +207,26 @@ namespace Staff_Management.Properties {
         internal static System.Drawing.Bitmap three_man_worker_with_yellow_swoosh_698903_8752 {
             get {
                 object obj = ResourceManager.GetObject("three-man-worker-with-yellow-swoosh_698903-8752", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap three_man_worker_with_yellow_swoosh_698903_8753 {
+            get {
+                object obj = ResourceManager.GetObject("three-man-worker-with-yellow-swoosh_698903-8753", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UUU {
+            get {
+                object obj = ResourceManager.GetObject("UUU", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
