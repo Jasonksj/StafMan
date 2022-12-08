@@ -9,40 +9,25 @@ using Staff_Management.Entities;
 
 namespace Staff_Management.Services
 {
-    public class AbsenceServices
+    public class CongesServices
     {
-        AbsenceDAO absenceDAO;
+        CongesDAO congesDAO;
 
-        public AbsenceServices()
+        public CongesServices()
         {
-            absenceDAO = new AbsenceDAO();
+            congesDAO = new CongesDAO();
         }
 
-        public List<Absence> FindAll()
+        public List<Conge> FindAll()
         {
-            return absenceDAO.FindAll();
+            return congesDAO.FindAll();
         }
 
-        public List<Absence> FilterByLostPercent(float lostPercent)
+        public List<Conge> FilterAllByStartDate(DateTime startDate)
         {
             try
             {
-                return FindAll().FindAll(absence => absence.PourcentagePerte == lostPercent);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erreur : " + ex.Message);
-            }
-        }
-
-        public bool Exists(string motif)
-        {
-            try
-            {
-                return FindAll().Find
-                    (
-                        absence => absence.Motif == motif
-                    ) != null;
+                return FindAll().FindAll(conge => conge.DateDebut == startDate);
             }
             catch(Exception ex)
             {
@@ -50,22 +35,58 @@ namespace Staff_Management.Services
             }
         }
 
-        public bool Exists(int id)
-        {
-            return absenceDAO.Exists(id);
-        }
-
-        public Absence Save(Absence absence)
+        public List<Conge> FilterAllByEndDate(DateTime endDate)
         {
             try
             {
-                if (!Exists(absence.Motif))
-                    return absenceDAO.Save(absence);
+                return FindAll().FindAll(conge => conge.DateFin == endDate);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Conge> FilterByPercentLost(float percentLost)
+        {
+            try
+            {
+                return FindAll().FindAll(conge => conge.PourcentageRetrait == percentLost);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public bool Exists(int id)
+        {
+            return congesDAO.Exists(id);
+        }
+
+        public bool Exists(string justification)
+        {
+            try
+            {
+                return FindAll().Find(conge => conge.Justification == justification) != null;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public Conge Save(Conge conge)
+        {
+            try
+            {
+                if (!Exists(conge.Justification))
+                    return congesDAO.Save(conge);
                 else
                 {
                     MessageBox.Show
                         (
-                            $"L'absence ayant pour motif '{absence.Motif}' existe déjà",
+                            $"Un congé présente déjà cette justification !",
                             "Echec",
                             MessageBoxButton.OK,
                             MessageBoxImage.Error
@@ -79,36 +100,17 @@ namespace Staff_Management.Services
             }
         }
 
-        public List<Absence> FilterByMotif(string motif)
+        public Conge Update(Conge conge)
         {
             try
             {
-                return FindAll().FindAll
-                    (
-                        absence => absence.Motif.IndexOf
-                        (
-                            motif,
-                            StringComparison.CurrentCultureIgnoreCase
-                        ) != -1
-                    );
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erreur : " + ex.Message);
-            }
-        }
-
-        public Absence Update(Absence absence)
-        {
-            try
-            {
-                if (Exists(absence.IdAbsence))
-                    return absenceDAO.Update(absence);
+                if (Exists(conge.IdConges))
+                    return congesDAO.Update(conge);
                 else
                 {
                     MessageBox.Show
                         (
-                            $"L'absence ayant pour motif '{absence.IdAbsence}' n'existe pas",
+                            $"Le congé modifié n'existe pas !",
                             "Echec",
                             MessageBoxButton.OK,
                             MessageBoxImage.Error
@@ -127,12 +129,12 @@ namespace Staff_Management.Services
             try
             {
                 if (Exists(id))
-                    return absenceDAO.Delete(id);
+                    return congesDAO.Delete(id);
                 else
                 {
                     MessageBox.Show
                         (
-                            "Ce type d'absence n'existe pas !",
+                            $"Ce congé n'existe pas !",
                             "Echec",
                             MessageBoxButton.OK,
                             MessageBoxImage.Error
@@ -145,6 +147,5 @@ namespace Staff_Management.Services
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
-
     }
 }

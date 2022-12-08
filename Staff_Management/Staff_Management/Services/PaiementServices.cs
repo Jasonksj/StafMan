@@ -18,14 +18,42 @@ namespace Staff_Management.Services
             paiementDAO = new PaiementDAO();
         }
 
-        public bool Exists(int id, DateTime dateDebut)
+        public bool Exists(int idEmployee, DateTime transactionDate)
         {
-            return paiementDAO.Exists(id, dateDebut);
+            return paiementDAO.Exists(idEmployee, transactionDate);
         }
 
         public List<Paiement> FindAll()
         {
             return paiementDAO.FindAll();
+        }
+
+        public List<Paiement> FilterByStartDateAccord(DateTime startDateAccord)
+        {
+            try
+            {
+                return FindAll().FindAll(paiement => paiement.DateDebutContrat == startDateAccord);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public Paiement Find(int idEmployee, DateTime transactionDate)
+        {
+            try
+            {
+                return FindAll().Find
+                    (
+                        paiement => paiement.IdEmployee == idEmployee &&
+                                    paiement.DateVersement == transactionDate
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
         }
 
         public Paiement Save(Paiement paiement)
@@ -52,12 +80,12 @@ namespace Staff_Management.Services
             }
         }
 
-        public int Delete(int id, DateTime dateDebut)
+        public int Delete(int id, DateTime dateVersement)
         {
             try
             {
-                if (Exists(id, dateDebut))
-                    return paiementDAO.Delete(id, dateDebut);
+                if (Exists(id, dateVersement))
+                    return paiementDAO.Delete(id, dateVersement);
                 else
                 {
                     MessageBox.Show

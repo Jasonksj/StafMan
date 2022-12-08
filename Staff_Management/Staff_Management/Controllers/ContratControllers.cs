@@ -59,6 +59,36 @@ namespace Staff_Management.Controllers
             return contratServices.FilterByName(name);
         }
 
+        public List<Contrat> FilterByStartDate(DateTime startDate)
+        {
+            return contratServices.FilterByStartDate(startDate);
+        }
+
+        public List<Contrat> FilterByEndDate(DateTime endDate)
+        {
+            return contratServices.FilterByEndDate(endDate);
+        }
+
+        public List<Contrat> FilterByEndDate(string hierachicalLevel)
+        {
+            return contratServices.FilterByHierachicalLevel(hierachicalLevel);
+        }
+
+        public List<Contrat> FilterByType(string type)
+        {
+            return contratServices.FilterByType(type);
+        }
+
+        public List<Contrat> FilterBySalary(float salary)
+        {
+            return contratServices.FilterBySalary(salary);
+        }
+
+        public List<Contrat> FilterByFonction(int idFonction)
+        {
+            return contratServices.FilterByFonction(idFonction);
+        }
+
         public List<Mission> GetMissionList(Contrat contrat)
         {
             return contratServices.GetMissionList(contrat);

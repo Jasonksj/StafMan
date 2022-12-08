@@ -27,6 +27,78 @@ namespace Staff_Management.Services
             return contratDAO.FindAll();
         }
 
+        public List<Contrat> FilterByStartDate(DateTime startDate)
+        {
+            try
+            {
+                return FindAll().FindAll(contrat => contrat.DateDebutContrat == startDate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Contrat> FilterByEndDate(DateTime endDate)
+        {
+            try
+            {
+                return FindAll().FindAll(contrat => contrat.DateFin == endDate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Contrat> FilterByHierachicalLevel(string hierachicalLevel)
+        {
+            try
+            {
+                return FindAll().FindAll(contrat => contrat.NiveauHierachique == hierachicalLevel);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Contrat> FilterByType(string type)
+        {
+            try
+            {
+                return FindAll().FindAll(contrat => contrat.Type == type);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Contrat> FilterBySalary(float salary)
+        {
+            try
+            {
+                return FindAll().FindAll(contrat => contrat.Salaire == salary);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Contrat> FilterByFonction(int idFonction)
+        {
+            try
+            {
+                return FindAll().FindAll(contrat => contrat.IdFonction == idFonction);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
         public bool Exists(string name, int idEmploye, DateTime dateDebut)
         {
             try
