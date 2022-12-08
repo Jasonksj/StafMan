@@ -35,6 +35,18 @@ namespace Staff_Management.Services
             }
         }
 
+        public Absence FindById(int id)
+        {
+            try
+            {
+                return FindAll().Find(absence => absence.IdAbsence == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
         public bool Exists(string motif)
         {
             try

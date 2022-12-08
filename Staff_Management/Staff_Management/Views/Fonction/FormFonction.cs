@@ -63,39 +63,46 @@ namespace Staff_Management.Views.Fonction
 
         private void btnValid_Click(object sender, EventArgs e)
         {
-            if (isUpdateForm)
+            try
             {
-                fonction.Nom = txtName.Text;
-                Entities.Fonction fonctionUpdated = fonctionControllers.Update
-                    (fonction);
-                if (fonctionUpdated != null)
+                if (isUpdateForm)
                 {
-                    MessageBox.Show
-                        (
-                            "Modification éffectuée avec succès !",
-                            "Succès",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information
-                        );
-                    Close();
+                    fonction.Nom = txtName.Text;
+                    Entities.Fonction fonctionUpdated = fonctionControllers.Update
+                        (fonction);
+                    if (fonctionUpdated != null)
+                    {
+                        MessageBox.Show
+                            (
+                                "Modification éffectuée avec succès !",
+                                "Succès",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information
+                            );
+                        Close();
+                    }
+                }
+                else
+                {
+                    Entities.Fonction fonctionCreated = fonctionControllers.Save
+                        (txtName.Text);
+                    if (fonctionCreated != null)
+                    {
+                        MessageBox.Show
+                           (
+                               $"Création de la fonction '{fonctionCreated.Nom}' éffectuée avec succès !",
+                               "Succès",
+                               MessageBoxButtons.OK,
+                               MessageBoxIcon.Information
+                           );
+                        Close();
+                    }
+
                 }
             }
-            else
+            catch(Exception ex)
             {
-                Entities.Fonction fonctionCreated = fonctionControllers.Save
-                    (txtName.Text);
-                if(fonctionCreated != null)
-                {
-                    MessageBox.Show
-                       (
-                           $"Création de la fonction '{fonctionCreated.Nom}' éffectuée avec succès !",
-                           "Succès",
-                           MessageBoxButtons.OK,
-                           MessageBoxIcon.Information
-                       );
-                    Close();
-                }
-                   
+                throw new Exception("Erreur : " + ex.Message);
             }
         }
     }

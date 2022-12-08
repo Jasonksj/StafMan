@@ -32,6 +32,18 @@ namespace Staff_Management.Services
             return departementDAO.FindAll();
         }
 
+        public Departement FindById(int id)
+        {
+            try
+            {
+                return FindAll().Find(dept => dept.IdDept == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
         public bool Exists(string name)
         {
             try

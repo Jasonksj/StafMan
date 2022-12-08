@@ -80,68 +80,88 @@ namespace Staff_Management.Views.Fonction
 
         private void FilterByInput(object sender, EventArgs e)
         {
-            string input = txtSearch.Text;
-            if (input.Length == 0)
+            try
             {
-                txtSearch.Text = defaultInput;
-                txtSearch.SelectAll();
-            }
-            else
+                string input = txtSearch.Text;
+                if (input.Length == 0)
+                {
+                    txtSearch.Text = defaultInput;
+                    txtSearch.SelectAll();
+                }
+                else
+                {
+                    PopulateDataGridView(fonctionControllers.FilterByName(input));
+                    CountItems();
+                }
+            }catch(Exception ex)
             {
-                PopulateDataGridView(fonctionControllers.FilterByName(input));
-                CountItems();
+                throw new Exception("Erreur : " + ex.Message);
             }
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            int id = GetIdOfSelectedFonction();
-
-            if(id != -1)
+            try
             {
-                int issue = fonctionControllers.Delete(id);
-                if (issue != -1)
-                    MessageBox.Show
-                        (
-                            "Suppression éffectuée avec succès !",
-                            "Succès",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information
-                        );
+                int id = GetIdOfSelectedFonction();
+
+                if (id != -1)
+                {
+                    int issue = fonctionControllers.Delete(id);
+                    if (issue != -1)
+                        MessageBox.Show
+                            (
+                                "Suppression éffectuée avec succès !",
+                                "Succès",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information
+                            );
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
             }
         }
 
         private int GetIdOfSelectedFonction()
         {
-            int id = -1;
-            int selectedRows = dataGridView1.SelectedRows.Count;
-
-            if (selectedRows < 1)
-                MessageBox.Show
-                    (
-                        "Vous n'avez sélectionné aucune ligne !",
-                        "Echec",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
-            else if (selectedRows > 1)
-                MessageBox.Show
-                    (
-                        "Vous avez sélectionné beaucoup trop de lignes !",
-                        "Echec",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
-            else
+            try
             {
-                for (int i = 0; i < selectedRows; i++)
-                {
-                    if ((bool)dataGridView1.SelectedRows[i].Cells[0].Value == true)
-                        id = fonctionControllers.FindByName(dataGridView1.SelectedRows[i].Cells[1].Value.ToString()).IdFonction;
-                }
-            }
+                int id = -1;
+                int selectedRows = dataGridView1.SelectedRows.Count;
 
-            return id;
+                if (selectedRows < 1)
+                    MessageBox.Show
+                        (
+                            "Vous n'avez sélectionné aucune ligne !",
+                            "Echec",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                else if (selectedRows > 1)
+                    MessageBox.Show
+                        (
+                            "Vous avez sélectionné beaucoup trop de lignes !",
+                            "Echec",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                else
+                {
+                    for (int i = 0; i < selectedRows; i++)
+                    {
+                        if ((bool)dataGridView1.SelectedRows[i].Cells[0].Value == true)
+                            id = fonctionControllers.FindByName(dataGridView1.SelectedRows[i].Cells[1].Value.ToString()).IdFonction;
+                    }
+                }
+
+                return id;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
         }
 
         private void btn_refresh_Click(object sender, EventArgs e)
@@ -151,12 +171,18 @@ namespace Staff_Management.Views.Fonction
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            int id = GetIdOfSelectedFonction();
-            if(id != -1)
+            try
             {
-                FormFonction formFonction = new FormFonction
-                    (fonctionControllers.FindById(id));
-                formFonction.ShowDialog();
+                int id = GetIdOfSelectedFonction();
+                if (id != -1)
+                {
+                    FormFonction formFonction = new FormFonction
+                        (fonctionControllers.FindById(id));
+                    formFonction.ShowDialog();
+                }
+            }catch(Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
             }
             
         }

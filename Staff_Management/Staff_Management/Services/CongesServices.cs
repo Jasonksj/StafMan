@@ -59,6 +59,18 @@ namespace Staff_Management.Services
             }
         }
 
+        public Conge FindById(int id)
+        {
+            try
+            {
+                return FindAll().Find(conge => conge.IdConges == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
         public bool Exists(int id)
         {
             return congesDAO.Exists(id);
