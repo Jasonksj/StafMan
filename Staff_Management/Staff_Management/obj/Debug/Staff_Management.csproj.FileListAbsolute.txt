@@ -223,3 +223,20 @@ C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormListMission.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormListPaiement.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormPaiement.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\Guna.UI2.dll
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Absence.FormAbsence.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Absence.FormListAbsence.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Conges.FormConges.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Conges.FormListConges.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormContrat.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormListContrat.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Departement.FormDepartement.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Departement.FornListDepartement.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Employee.FormAddEmployee.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Employee.FormListEmployee.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Fonction.FormFonction.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Fonction.FormListFonction.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormListMission.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormMission.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormListPaiement.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormPaiement.resources

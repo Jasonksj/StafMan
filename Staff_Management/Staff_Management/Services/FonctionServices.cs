@@ -51,6 +51,18 @@ namespace Staff_Management.Services
             return fonctions.Find(fonction => fonction.Nom == name);
         }
 
+        public Fonction FindById(int id)
+        {
+            try
+            {
+                return FindAll().Find(fonction => fonction.IdFonction == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
         public Fonction Save(Fonction fonction)
         {
             try
@@ -98,13 +110,26 @@ namespace Staff_Management.Services
         {
             try
             {
-                if (Exists(fonction.IdFonction))
+                bool hasThisIdHere = Exists(fonction.IdFonction);
+                bool hasThisNameHere = Exists(fonction.Nom);
+                if (hasThisIdHere && !hasThisNameHere)
                     return fonctionDAO.Update(fonction);
-                else
+                else if (!hasThisIdHere)
                 {
                     MessageBox.Show
                         (
-                            $"La fonction '{fonction.Nom} n'existe pas !",
+                            $"Cette fonction n'existe pas !",
+                            "Echec",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    return null;
+                }
+                else if (hasThisNameHere)
+                {
+                    MessageBox.Show
+                        (
+                            $"La fonction '{fonction.Nom}' existe déjà !",
                             "Echec",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error

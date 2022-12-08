@@ -55,7 +55,14 @@ namespace Staff_Management.Services
         {
             try
             {
-                return FindAll().FindAll(contrat => contrat.NiveauHierachique == hierachicalLevel);
+                return FindAll().FindAll
+                    (
+                        contrat => contrat.NiveauHierachique.IndexOf
+                        (
+                            hierachicalLevel,
+                            StringComparison.CurrentCultureIgnoreCase
+                        ) != -1
+                    ).ToList();
             }
             catch (Exception ex)
             {
@@ -67,7 +74,14 @@ namespace Staff_Management.Services
         {
             try
             {
-                return FindAll().FindAll(contrat => contrat.Type == type);
+                return FindAll().FindAll
+                    (
+                        contrat => contrat.Type.IndexOf
+                        (
+                            type,
+                            StringComparison.CurrentCultureIgnoreCase
+                        ) != -1
+                    ).ToList();
             }
             catch (Exception ex)
             {
