@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AbsenceControllers.cs" />
+    <Compile Include="Controllers\CongesControllers.cs" />
     <Compile Include="Controllers\ContratControllers.cs" />
     <Compile Include="Controllers\DepartementControllers.cs" />
     <Compile Include="Controllers\EmployeeControllers.cs" />
