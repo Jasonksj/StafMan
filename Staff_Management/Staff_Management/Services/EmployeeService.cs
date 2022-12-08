@@ -201,5 +201,41 @@ namespace Staff_Management.Services
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
+
+        public List<Employee> FilterByHireDate(DateTime hireDate)
+        {
+            try
+            {
+                return FindAll().FindAll(employee => employee.DateEmbauche == hireDate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Employee> FilterByDepartment(int idDept)
+        {
+            try
+            {
+                return FindAll().FindAll(employee => employee.IdDept == idDept);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
+        public List<Employee> FilterByManager(int idManager)
+        {
+            try
+            {
+                return FindAll().FindAll(employee => employee.IdManager == idManager);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
     }
 }
