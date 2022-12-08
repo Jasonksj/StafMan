@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3dea792789b44ce18f668a3b99f9b3f2" Name="Diagram1" ZoomLevel="142">
+      <Diagram DiagramId="3dea792789b44ce18f668a3b99f9b3f2" Name="Diagram1" ZoomLevel="118">
         <EntityTypeShape EntityType="StafManModel.Absence" Width="1.5" PointX="15" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.Conge" Width="1.5" PointX="19.25" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="StafManModel.Contrat" Width="1.5" PointX="9.5" PointY="0.75" IsExpanded="true" />
