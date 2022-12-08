@@ -68,19 +68,18 @@ namespace Staff_Management.Services
         {
             try
             {
-                if (Exists(employee.Id))
+                bool hasThisIdHere = Exists(employee.Id);
+                if (hasThisIdHere)
                     return employeeDAO.Update(employee);
-                else
-                {
+                else if (!hasThisIdHere)
                     MessageBox.Show
                         (
-                            $"L'employé '{employee.Nom} n'existe pas !",
+                            $"Cet employé n'existe pas !",
                             "Echec",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
                         );
-                    return null;
-                }
+               return null;
             }
             catch (Exception ex)
             {

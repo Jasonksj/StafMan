@@ -32,6 +32,18 @@ namespace Staff_Management.Services
             return departementDAO.FindAll();
         }
 
+        public Departement FindById(int id)
+        {
+            try
+            {
+                return FindAll().Find(dept => dept.IdDept == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
         public bool Exists(string name)
         {
             try
@@ -104,19 +116,27 @@ namespace Staff_Management.Services
         {
             try
             {
-                if (Exists(departement.IdDept))
+                bool hasThisNameHere = Exists(departement.Nom);
+                bool hasThisIdHere = Exists(departement.IdDept);
+                if (hasThisIdHere && !hasThisNameHere)
                     return departementDAO.Update(departement);
-                else
-                {
+                else if (!hasThisIdHere)
                     MessageBox.Show
                         (
-                            $"Le departement '{departement.Nom} n'existe pas !",
+                            $"Ce département n'existe pas !",
                             "Echec",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
                         );
-                    return null;
-                }
+                else if (hasThisNameHere)
+                    MessageBox.Show
+                        (
+                            $"Le departement '{departement.Nom} existe déjà !",
+                            "Echec",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                return null;
             }
             catch (Exception ex)
             {

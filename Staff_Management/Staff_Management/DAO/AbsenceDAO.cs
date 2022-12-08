@@ -1,6 +1,7 @@
 ﻿using Staff_Management.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -100,6 +101,7 @@ namespace Staff_Management.DAO
             try
             {
                 this.absence = absence;
+                stafMan.Absences.AddOrUpdate(this.absence);
                 stafMan.SaveChanges();
                 return this.absence;
             }

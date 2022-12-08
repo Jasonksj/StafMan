@@ -134,19 +134,27 @@ namespace Staff_Management.Services
         {
             try
             {
-                if (Exists(utilisateur.IdUtilisateur))
+                bool hasThisUnameAndThisPwdHere =  Exists(utilisateur.NomUtilisateur, utilisateur.MotDePasse);
+                bool hasThisIdHere = Exists(utilisateur.IdUtilisateur);
+                if (hasThisIdHere && !hasThisUnameAndThisPwdHere)
                     return utilisateurDao.Update(utilisateur);
-                else
-                {
+                else if (!hasThisIdHere)
                     System.Windows.MessageBox.Show
                         (
-                            $"L'utilisateur '{utilisateur.NomUtilisateur}' n'existe pas !",
+                            $"Cet Utilisateur n'existe pas !",
                             "Echec",
                             MessageBoxButton.OK,
                             MessageBoxImage.Error
                         );
-                    return null;
-                }
+                else if (hasThisUnameAndThisPwdHere)
+                    System.Windows.MessageBox.Show
+                        (
+                            $"L'utilisateur '{utilisateur.NomUtilisateur}' existe déjà !",
+                            "Echec",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Error
+                        );
+                return null;
             }
             catch (Exception ex)
             {
