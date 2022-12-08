@@ -182,6 +182,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.abcnes;
             this.pictureBox1.Location = new System.Drawing.Point(45, 152);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(249, 189);

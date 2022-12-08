@@ -172,7 +172,7 @@ namespace Staff_Management.Views
 
         private void btn_conges_Click(object sender, EventArgs e)
         {
-            pnlbat.Top = btn_contrat.Top;
+            pnlbat.Top = btn_conges.Top;
 
             if (!main.Controls.Contains(FormListConges.Instance))
             {
