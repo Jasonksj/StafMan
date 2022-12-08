@@ -94,9 +94,29 @@ namespace Staff_Management.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap departement {
+            get {
+                object obj = ResourceManager.GetObject("departement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FF {
             get {
                 object obj = ResourceManager.GetObject("FF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fonction {
+            get {
+                object obj = ResourceManager.GetObject("fonction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
