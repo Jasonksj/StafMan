@@ -37,18 +37,23 @@
             this.btn_fonction = new System.Windows.Forms.Button();
             this.btn_dept = new System.Windows.Forms.Button();
             this.pnlbat = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_employee = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.main = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.main = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.main.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,7 +72,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(151, 755);
+            this.panel1.Size = new System.Drawing.Size(151, 1071);
             this.panel1.TabIndex = 0;
             // 
             // btn_mission
@@ -190,16 +195,6 @@
             this.pnlbat.Size = new System.Drawing.Size(11, 57);
             this.pnlbat.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8752;
-            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
-            this.pictureBox1.Location = new System.Drawing.Point(-27, -21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 142);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // btn_employee
             // 
             this.btn_employee.FlatAppearance.BorderSize = 0;
@@ -224,9 +219,74 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(151, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1397, 49);
+            this.panel2.Size = new System.Drawing.Size(1789, 49);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // main
+            // 
+            this.main.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.main.Controls.Add(this.panel3);
+            this.main.Controls.Add(this.pictureBox2);
+            this.main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main.Location = new System.Drawing.Point(151, 49);
+            this.main.Name = "main";
+            this.main.Size = new System.Drawing.Size(1789, 1022);
+            this.main.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 1000);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1789, 22);
+            this.panel3.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(862, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Administrateur";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1704, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 18);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Version 1.1";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ready...";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Staff_Management.Properties.Resources.personnel_management_concept_277904_11919;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1789, 1022);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // button3
             // 
@@ -234,7 +294,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::Staff_Management.Properties.Resources.icons8_minimize_window_32;
-            this.button3.Location = new System.Drawing.Point(1329, 0);
+            this.button3.Location = new System.Drawing.Point(1721, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(31, 25);
             this.button3.TabIndex = 1;
@@ -247,38 +307,28 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::Staff_Management.Properties.Resources.icons8_close_window_32;
-            this.button2.Location = new System.Drawing.Point(1366, 0);
+            this.button2.Location = new System.Drawing.Point(1758, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(31, 25);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // main
+            // pictureBox1
             // 
-            this.main.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.main.Controls.Add(this.pictureBox2);
-            this.main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main.Location = new System.Drawing.Point(151, 49);
-            this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(1397, 706);
-            this.main.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Staff_Management.Properties.Resources.personnel_management_concept_277904_11919;
-            this.pictureBox2.Location = new System.Drawing.Point(549, 263);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(654, 465);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8752;
+            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
+            this.pictureBox1.Location = new System.Drawing.Point(-27, -21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(178, 142);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1548, 755);
+            this.ClientSize = new System.Drawing.Size(1940, 1071);
             this.Controls.Add(this.main);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -290,10 +340,12 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.main.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -316,5 +368,9 @@
         private System.Windows.Forms.Button btn_absence;
         private System.Windows.Forms.Button btn_mission;
         private System.Windows.Forms.Button btn_conges;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -207,6 +207,11 @@
     <Compile Include="Entities\Utilisateur.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Services\AbsenceServices.cs" />
     <Compile Include="Services\CongesServices.cs" />
     <Compile Include="Services\ContratServices.cs" />
@@ -340,14 +345,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Views\Absence\FormAbsence.resx">
       <DependentUpon>FormAbsence.cs</DependentUpon>
     </EmbeddedResource>
@@ -430,10 +430,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Views\Fonction\" />
-    <Folder Include="Views\Paiement\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <ItemGroup>
     <Content Include="Entities\StafManModel.Context.tt">
@@ -446,6 +443,9 @@
       <DependentUpon>StafManModel.edmx</DependentUpon>
       <LastGenOutput>StafManModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\abcnes1.png" />
+    <None Include="Resources\con.png" />
+    <None Include="Resources\abcnes.png" />
     <None Include="Resources\sign.png" />
     <None Include="Resources\departement.png" />
     <None Include="Resources\fonction.png" />

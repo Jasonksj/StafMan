@@ -207,11 +207,12 @@
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Location = new System.Drawing.Point(369, 260);
             this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PasswordChar = '●';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(202, 27);
             this.guna2TextBox1.TabIndex = 30;
+            this.guna2TextBox1.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -246,11 +247,12 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Location = new System.Drawing.Point(371, 341);
             this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PasswordChar = '●';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(202, 27);
             this.guna2TextBox2.TabIndex = 33;
+            this.guna2TextBox2.UseSystemPasswordChar = true;
             // 
             // label5
             // 

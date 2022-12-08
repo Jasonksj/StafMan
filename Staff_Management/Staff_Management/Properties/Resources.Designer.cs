@@ -73,6 +73,16 @@ namespace Staff_Management.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap abcnes {
+            get {
+                object obj = ResourceManager.GetObject("abcnes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap businessman_top_looking_into_telescope_employees_business_opportunity_bizopp_franchising_distribution_concept_white_background_335657_2028 {
             get {
                 object obj = ResourceManager.GetObject("businessman-top-looking-into-telescope-employees-business-opportunity-bizopp-fran" +
