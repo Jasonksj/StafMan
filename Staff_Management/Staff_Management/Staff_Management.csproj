@@ -375,14 +375,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Folder Include="Views\Absence\" />
     <Folder Include="Views\Conges\" />
     <Folder Include="Views\Contrat\" />
     <Folder Include="Views\Departement\" />
     <Folder Include="Views\Employee\" />
->>>>>>> 0e5bf17d770ab1436a247e554a010e3aeb9bda84
     <Folder Include="Views\Fonction\" />
     <Folder Include="Views\Paiement\" />
   </ItemGroup>

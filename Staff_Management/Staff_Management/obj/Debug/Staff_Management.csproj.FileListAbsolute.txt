@@ -207,7 +207,6 @@ E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\WinFormAnimation.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.xml
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
-<<<<<<< HEAD
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Absence.FormAbsence.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Conges.FormConges.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormContrat.resources
@@ -217,5 +216,3 @@ C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormMission.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Employee.FormAddEmployee.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormListContrat.resources
-=======
->>>>>>> 0e5bf17d770ab1436a247e554a010e3aeb9bda84
