@@ -204,6 +204,16 @@ namespace Staff_Management.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sign {
+            get {
+                object obj = ResourceManager.GetObject("sign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap three_man_worker_with_yellow_swoosh_698903_875 {
             get {
                 object obj = ResourceManager.GetObject("three-man-worker-with-yellow-swoosh_698903-875", resourceCulture);

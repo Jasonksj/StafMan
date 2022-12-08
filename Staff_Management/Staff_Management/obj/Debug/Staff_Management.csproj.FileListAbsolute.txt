@@ -202,7 +202,6 @@ C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.xml
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.MainForm.resources
-C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Organigramme.resources
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\WinFormAnimation.dll
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\CircularProgressBar.xml
@@ -211,8 +210,16 @@ C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Conges.FormConges.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormContrat.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Departement.FormDepartement.resources
-C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Departement.FormListDepartement.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\bin\Debug\Guna.UI2.dll
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormMission.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Employee.FormAddEmployee.resources
 C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Contrat.FormListContrat.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Fonction.FormFonction.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Absence.FormListAbsence.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Conges.FormListConges.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Departement.FornListDepartement.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Employee.FormListEmployee.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Fonction.FormListFonction.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormListMission.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormListPaiement.resources
+C:\Users\Jason Kamsu\Desktop\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormPaiement.resources

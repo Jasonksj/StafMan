@@ -29,28 +29,34 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_mission = new System.Windows.Forms.Button();
+            this.btn_conges = new System.Windows.Forms.Button();
+            this.btn_absence = new System.Windows.Forms.Button();
             this.btn_paiement = new System.Windows.Forms.Button();
             this.btn_contrat = new System.Windows.Forms.Button();
             this.btn_fonction = new System.Windows.Forms.Button();
             this.btn_dept = new System.Windows.Forms.Button();
             this.pnlbat = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_employee = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.main = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.main = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.main.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.btn_mission);
+            this.panel1.Controls.Add(this.btn_conges);
+            this.panel1.Controls.Add(this.btn_absence);
             this.panel1.Controls.Add(this.btn_paiement);
             this.panel1.Controls.Add(this.btn_contrat);
             this.panel1.Controls.Add(this.btn_fonction);
@@ -61,8 +67,56 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(151, 691);
+            this.panel1.Size = new System.Drawing.Size(151, 755);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_mission
+            // 
+            this.btn_mission.FlatAppearance.BorderSize = 0;
+            this.btn_mission.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_mission.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_mission.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mission.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mission.ForeColor = System.Drawing.Color.White;
+            this.btn_mission.Location = new System.Drawing.Point(12, 690);
+            this.btn_mission.Name = "btn_mission";
+            this.btn_mission.Size = new System.Drawing.Size(139, 57);
+            this.btn_mission.TabIndex = 8;
+            this.btn_mission.Text = "Mission";
+            this.btn_mission.UseVisualStyleBackColor = true;
+            this.btn_mission.Click += new System.EventHandler(this.btn_mission_Click);
+            // 
+            // btn_conges
+            // 
+            this.btn_conges.FlatAppearance.BorderSize = 0;
+            this.btn_conges.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_conges.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_conges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_conges.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_conges.ForeColor = System.Drawing.Color.White;
+            this.btn_conges.Location = new System.Drawing.Point(12, 627);
+            this.btn_conges.Name = "btn_conges";
+            this.btn_conges.Size = new System.Drawing.Size(139, 57);
+            this.btn_conges.TabIndex = 7;
+            this.btn_conges.Text = "Conges";
+            this.btn_conges.UseVisualStyleBackColor = true;
+            this.btn_conges.Click += new System.EventHandler(this.btn_conges_Click);
+            // 
+            // btn_absence
+            // 
+            this.btn_absence.FlatAppearance.BorderSize = 0;
+            this.btn_absence.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_absence.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_absence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_absence.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_absence.ForeColor = System.Drawing.Color.White;
+            this.btn_absence.Location = new System.Drawing.Point(12, 564);
+            this.btn_absence.Name = "btn_absence";
+            this.btn_absence.Size = new System.Drawing.Size(139, 57);
+            this.btn_absence.TabIndex = 6;
+            this.btn_absence.Text = "Absence";
+            this.btn_absence.UseVisualStyleBackColor = true;
+            this.btn_absence.Click += new System.EventHandler(this.btn_absence_Click);
             // 
             // btn_paiement
             // 
@@ -136,6 +190,16 @@
             this.pnlbat.Size = new System.Drawing.Size(11, 57);
             this.pnlbat.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8752;
+            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
+            this.pictureBox1.Location = new System.Drawing.Point(-27, -21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(178, 142);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_employee
             // 
             this.btn_employee.FlatAppearance.BorderSize = 0;
@@ -160,18 +224,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(151, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1358, 28);
+            this.panel2.Size = new System.Drawing.Size(1397, 49);
             this.panel2.TabIndex = 1;
-            // 
-            // main
-            // 
-            this.main.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.main.Controls.Add(this.pictureBox2);
-            this.main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main.Location = new System.Drawing.Point(151, 28);
-            this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(1358, 663);
-            this.main.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button3
             // 
@@ -179,7 +234,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::Staff_Management.Properties.Resources.icons8_minimize_window_32;
-            this.button3.Location = new System.Drawing.Point(1290, 0);
+            this.button3.Location = new System.Drawing.Point(1329, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(31, 25);
             this.button3.TabIndex = 1;
@@ -192,22 +247,22 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::Staff_Management.Properties.Resources.icons8_close_window_32;
-            this.button2.Location = new System.Drawing.Point(1327, 0);
+            this.button2.Location = new System.Drawing.Point(1366, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(31, 25);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox1
+            // main
             // 
-            this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8752;
-            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
-            this.pictureBox1.Location = new System.Drawing.Point(-27, -21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 142);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.main.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.main.Controls.Add(this.pictureBox2);
+            this.main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main.Location = new System.Drawing.Point(151, 49);
+            this.main.Name = "main";
+            this.main.Size = new System.Drawing.Size(1397, 706);
+            this.main.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -223,7 +278,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1509, 691);
+            this.ClientSize = new System.Drawing.Size(1548, 755);
             this.Controls.Add(this.main);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -232,10 +287,12 @@
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.main.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -256,5 +313,8 @@
         private System.Windows.Forms.Button btn_dept;
         private System.Windows.Forms.Panel pnlbat;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btn_absence;
+        private System.Windows.Forms.Button btn_mission;
+        private System.Windows.Forms.Button btn_conges;
     }
 }
