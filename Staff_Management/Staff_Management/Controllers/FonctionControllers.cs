@@ -56,6 +56,11 @@ namespace Staff_Management.Controllers
             return fonctionServices.FindByName(name);
         }
 
+        public Fonction FindById(int id)
+        {
+            return fonctionServices.FindById(id);
+        }
+
         public List<Fonction> FilterByName(string name)
         {
             return fonctionServices.FilterByName(name);

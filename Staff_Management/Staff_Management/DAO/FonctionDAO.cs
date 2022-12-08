@@ -1,6 +1,7 @@
 ﻿using Staff_Management.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -96,6 +97,7 @@ namespace Staff_Management.DAO
             try
             {
                 this.fonction = fonction;
+                stafMan.Fonctions.AddOrUpdate(this.fonction);
                 stafMan.SaveChanges();
                 return this.fonction;
             }
