@@ -32,9 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_ajout = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -42,12 +46,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +88,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(1342, 392);
             this.dataGridView1.TabIndex = 0;
             // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Titre";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Type";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Niveau Hierachique";
+            this.Column5.Name = "Column5";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "DateDebut";
+            this.Column1.Name = "Column1";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Date de fin";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Salaire";
+            this.Column7.Name = "Column7";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -95,23 +127,6 @@
             this.label1.Size = new System.Drawing.Size(267, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "LISTE DES CONTRATS";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(370, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Recherche";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(473, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(635, 20);
-            this.textBox1.TabIndex = 2;
             // 
             // btn_ajout
             // 
@@ -183,49 +198,53 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // Column3
+            // dateTimePicker1
             // 
-            this.Column3.HeaderText = "Titre";
-            this.Column3.Name = "Column3";
+            this.dateTimePicker1.Location = new System.Drawing.Point(743, 101);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(480, 20);
+            this.dateTimePicker1.TabIndex = 15;
             // 
-            // Column4
+            // comboBox1
             // 
-            this.Column4.HeaderText = "Type";
-            this.Column4.Name = "Column4";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(324, 101);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(187, 21);
+            this.comboBox1.TabIndex = 14;
             // 
-            // Column5
+            // textBox1
             // 
-            this.Column5.HeaderText = "Niveau Hierachique";
-            this.Column5.Name = "Column5";
+            this.textBox1.Location = new System.Drawing.Point(743, 98);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(480, 20);
+            this.textBox1.TabIndex = 13;
             // 
-            // Column1
+            // label2
             // 
-            this.Column1.HeaderText = "DateDebut";
-            this.Column1.Name = "Column1";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Date de fin";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Salaire";
-            this.Column7.Name = "Column7";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(640, 98);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 22);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Recherche";
             // 
             // FormListContrat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_ajout);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormListContrat";
@@ -242,8 +261,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_ajout;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_delete;
@@ -257,5 +274,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

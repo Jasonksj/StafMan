@@ -44,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblCount = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,8 +109,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(579, 127);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.label2.Location = new System.Drawing.Point(621, 103);
+>>>>>>> c47c1b5e3d0a69427e3fdbe2c31bde554f19ff3b
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 26);
             this.label2.TabIndex = 1;
@@ -117,12 +122,19 @@
             // 
             // txtSearch
             // 
+<<<<<<< HEAD
             this.txtSearch.Location = new System.Drawing.Point(716, 127);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(639, 22);
             this.txtSearch.TabIndex = 2;
             this.txtSearch.Text = "Search...";
+=======
+            this.textBox1.Location = new System.Drawing.Point(724, 103);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(480, 20);
+            this.textBox1.TabIndex = 2;
+>>>>>>> c47c1b5e3d0a69427e3fdbe2c31bde554f19ff3b
             // 
             // btn_ajout
             // 
@@ -201,11 +213,20 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(311, 104);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(187, 21);
+            this.comboBox1.TabIndex = 15;
+            // 
             // FormListFonction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btn_delete);
@@ -242,5 +263,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
