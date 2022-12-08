@@ -223,7 +223,7 @@
       <DependentUpon>FormAbsence.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Absence\FormListAbsence.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\Absence\FormListAbsence.Designer.cs">
       <DependentUpon>FormListAbsence.cs</DependentUpon>
@@ -235,7 +235,7 @@
       <DependentUpon>FormConges.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Conges\FormListConges.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\Conges\FormListConges.Designer.cs">
       <DependentUpon>FormListConges.cs</DependentUpon>
@@ -258,17 +258,35 @@
     <Compile Include="Views\Departement\FormDepartement.Designer.cs">
       <DependentUpon>FormDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Departement\FormListDepartement.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Views\Departement\FornListDepartement.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Departement\FormListDepartement.Designer.cs">
-      <DependentUpon>FormListDepartement.cs</DependentUpon>
+    <Compile Include="Views\Departement\FornListDepartement.Designer.cs">
+      <DependentUpon>FornListDepartement.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Employee\FormAddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Employee\FormAddEmployee.Designer.cs">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\FormListEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\FormListEmployee.Designer.cs">
+      <DependentUpon>FormListEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fonction\FormFonction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Fonction\FormFonction.Designer.cs">
+      <DependentUpon>FormFonction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fonction\FormListFonction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Fonction\FormListFonction.Designer.cs">
+      <DependentUpon>FormListFonction.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Frmlogin.cs">
       <SubType>Form</SubType>
@@ -288,17 +306,29 @@
     <Compile Include="Views\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Mission\FormListMission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Mission\FormListMission.Designer.cs">
+      <DependentUpon>FormListMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Mission\FormMission.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Mission\FormMission.Designer.cs">
       <DependentUpon>FormMission.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Organigramme.cs">
+    <Compile Include="Views\Paiement\FormListPaiement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Paiement\FormListPaiement.Designer.cs">
+      <DependentUpon>FormListPaiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Paiement\FormPaiement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Organigramme.Designer.cs">
-      <DependentUpon>Organigramme.cs</DependentUpon>
+    <Compile Include="Views\Paiement\FormPaiement.Designer.cs">
+      <DependentUpon>FormPaiement.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SplashScreen.cs">
       <SubType>Form</SubType>
@@ -322,8 +352,14 @@
     <EmbeddedResource Include="Views\Absence\FormAbsence.resx">
       <DependentUpon>FormAbsence.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Absence\FormListAbsence.resx">
+      <DependentUpon>FormListAbsence.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Conges\FormConges.resx">
       <DependentUpon>FormConges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conges\FormListConges.resx">
+      <DependentUpon>FormListConges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Contrat\FormContrat.resx">
       <DependentUpon>FormContrat.cs</DependentUpon>
@@ -334,11 +370,20 @@
     <EmbeddedResource Include="Views\Departement\FormDepartement.resx">
       <DependentUpon>FormDepartement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Departement\FormListDepartement.resx">
-      <DependentUpon>FormListDepartement.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Departement\FornListDepartement.resx">
+      <DependentUpon>FornListDepartement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Employee\FormAddEmployee.resx">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\FormListEmployee.resx">
+      <DependentUpon>FormListEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Fonction\FormFonction.resx">
+      <DependentUpon>FormFonction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Fonction\FormListFonction.resx">
+      <DependentUpon>FormListFonction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frmlogin.resx">
       <DependentUpon>Frmlogin.cs</DependentUpon>
@@ -349,11 +394,17 @@
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mission\FormListMission.resx">
+      <DependentUpon>FormListMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Mission\FormMission.resx">
       <DependentUpon>FormMission.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Organigramme.resx">
-      <DependentUpon>Organigramme.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Paiement\FormListPaiement.resx">
+      <DependentUpon>FormListPaiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Paiement\FormPaiement.resx">
+      <DependentUpon>FormPaiement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
@@ -379,6 +430,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Folder Include="Views\Fonction\" />
     <Folder Include="Views\Paiement\" />
@@ -395,6 +447,9 @@
       <DependentUpon>StafManModel.edmx</DependentUpon>
       <LastGenOutput>StafManModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\sign.png" />
+    <None Include="Resources\departement.png" />
+    <None Include="Resources\fonction.png" />
     <None Include="Resources\DD.png" />
     <None Include="Resources\personnel-management-concept_277904-119191.png" />
     <None Include="Resources\FF.png" />

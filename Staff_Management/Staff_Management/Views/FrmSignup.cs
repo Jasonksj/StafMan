@@ -19,11 +19,11 @@ namespace Staff_Management.Views
         public FrmSignup()
         {
             InitializeComponent();
-            string[] genders = { "Male", "Female", "Mix", "No gender", "Other" };
-            combo_gender.DataSource = genders;
-            combo_gender.SelectedIndex = -1;
-            Check_statut.Checked = true;
-            dateTimePicker1.Value = new DateTime(2000, 8, 16);
+            //string[] genders = { "Male", "Female", "Mix", "No gender", "Other" };
+            //combo_gender.DataSource = genders;
+            //combo_gender.SelectedIndex = -1;
+            //Check_statut.Checked = true;
+            //dateTimePicker1.Value = new DateTime(2000, 8, 16);
             fonctionControllers = new FonctionControllers();
         }
 
@@ -46,6 +46,21 @@ namespace Staff_Management.Views
         {
             new Frmlogin().Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmSignup_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

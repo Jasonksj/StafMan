@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Staff_Management.Views.Departement
+namespace Staff_Management.Views.Paiement
 {
-    public partial class FormListDepartement : Form
+    public partial class FormPaiement : Form
     {
-        public FormListDepartement()
+        public FormPaiement()
         {
             InitializeComponent();
         }

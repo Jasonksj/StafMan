@@ -1,6 +1,6 @@
-﻿namespace Staff_Management.Views
+﻿namespace Staff_Management.Views.Paiement
 {
-    partial class Organigramme
+    partial class FormPaiement
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,19 @@
         {
             this.SuspendLayout();
             // 
-            // Organigramme
+            // FormPaiement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 545);
-            this.Name = "Organigramme";
-            this.Text = "Organigramme";
-            this.Load += new System.EventHandler(this.Organigramme_Load);
+            this.ClientSize = new System.Drawing.Size(1515, 642);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormPaiement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormPaiement";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Aspose.Diagram.Printing.AsposeDiagramPrintDocument asposeDiagramPrintDocument1;
     }
 }
