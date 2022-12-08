@@ -53,6 +53,21 @@ namespace Staff_Management.Controllers
             return missionServices.FilterByName(name);
         }
 
+        public List<Mission> FilterByStartDate(DateTime startDate)
+        {
+            return missionServices.FilterByStartDate(startDate);
+        }
+
+        public List<Mission> FilterByEndDate(DateTime endDate)
+        {
+            return missionServices.FilterByEndDate(endDate);
+        }
+
+        public List<Mission> FilterByAccordStartDate(DateTime accordStartDate)
+        {
+            return missionServices.FilterByAccordStartDate(accordStartDate);
+        }
+
         public Mission FindByName(string name)
         {
             return missionServices.FindByName(name);
