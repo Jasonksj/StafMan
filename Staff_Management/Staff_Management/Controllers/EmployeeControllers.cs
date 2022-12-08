@@ -69,6 +69,21 @@ namespace Staff_Management.Controllers
             return empServices.FilterByName(name);
         }
 
+        public List<Employee> FilterByHireDate(DateTime hireDate)
+        {
+            return empServices.FilterByHireDate(hireDate);
+        }
+
+        public List<Employee> FilterByDepartment(int idDept)
+        {
+            return empServices.FilterByDepartment(idDept);
+        }
+
+        public List<Employee> FilterByManager(int idManager)
+        {
+            return empServices.FilterByManager(idManager);
+        }
+
         public Employee FindTheManagerOf(Employee employee)
         {
             return empServices.FindTheManagerOf(employee);
