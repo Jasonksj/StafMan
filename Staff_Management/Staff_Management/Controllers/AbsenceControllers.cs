@@ -42,6 +42,11 @@ namespace Staff_Management.Controllers
             return absenceServices.FilterByMotif(motif);
         }
 
+        public List<Absence> FilterByLostPercent(float lostPercent)
+        {
+            return absenceServices.FilterByLostPercent(lostPercent);
+        }
+
         public bool Exists(int id)
         {
             return absenceServices.Exists(id);
