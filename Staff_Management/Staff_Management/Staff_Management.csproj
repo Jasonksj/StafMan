@@ -138,7 +138,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AbsenceControllers.cs" />
+    <Compile Include="Controllers\ContratControllers.cs" />
+    <Compile Include="Controllers\DepartementControllers.cs" />
+    <Compile Include="Controllers\EmployeeControllers.cs" />
     <Compile Include="Controllers\FonctionControllers.cs" />
+    <Compile Include="Controllers\MissionControllers.cs" />
     <Compile Include="Controllers\UtilisateurControllers.cs" />
     <Compile Include="DAO\AbsenceDAO.cs" />
     <Compile Include="DAO\DepartementDAO.cs" />
@@ -200,6 +205,7 @@
     <Compile Include="Entities\Utilisateur.cs">
       <DependentUpon>StafManModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\AbsenceServices.cs" />
     <Compile Include="Services\DepartementServices.cs" />
     <Compile Include="Services\ContratServices.cs" />
     <Compile Include="Services\EmployeeService.cs" />
@@ -369,6 +375,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Folder Include="Views\Absence\" />
+    <Folder Include="Views\Conges\" />
+    <Folder Include="Views\Contrat\" />
+    <Folder Include="Views\Departement\" />
+    <Folder Include="Views\Employee\" />
+>>>>>>> 0e5bf17d770ab1436a247e554a010e3aeb9bda84
     <Folder Include="Views\Fonction\" />
     <Folder Include="Views\Paiement\" />
   </ItemGroup>
