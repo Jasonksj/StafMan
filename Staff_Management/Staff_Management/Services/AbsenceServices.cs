@@ -23,6 +23,18 @@ namespace Staff_Management.Services
             return absenceDAO.FindAll();
         }
 
+        public List<Absence> FilterByLostPercent(float lostPercent)
+        {
+            try
+            {
+                return FindAll().FindAll(absence => absence.PourcentagePerte == lostPercent);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
+
         public bool Exists(string motif)
         {
             try
