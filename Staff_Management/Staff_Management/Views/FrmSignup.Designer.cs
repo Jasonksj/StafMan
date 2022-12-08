@@ -107,7 +107,7 @@
             // Check_statut
             // 
             this.Check_statut.AutoSize = true;
-            this.Check_statut.Location = new System.Drawing.Point(471, 374);
+            this.Check_statut.Location = new System.Drawing.Point(473, 374);
             this.Check_statut.Name = "Check_statut";
             this.Check_statut.Size = new System.Drawing.Size(102, 17);
             this.Check_statut.TabIndex = 17;

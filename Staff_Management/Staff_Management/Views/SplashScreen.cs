@@ -27,6 +27,7 @@ namespace Staff_Management
             progressBar1.Value++;
             if (progressBar1.Value == 100)
             {
+                progressBar1.Value++;
                 timer1.Enabled = false;
                 label1.Text = "Tentative de connexion a la base de donnée ...";
                 label1.Refresh();
