@@ -61,18 +61,6 @@ namespace Staff_Management.Services
             }
         }
 
-        public List<Mission> FilterByTitle(string title)
-        {
-            try
-            {
-                return FindAll().FindAll(mission => mission.Intitule == title);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erreur " + ex.Message);
-            }
-        }
-
         public Mission Save(Mission mission)
         {
             try
