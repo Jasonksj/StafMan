@@ -44,14 +44,14 @@ namespace Staff_Management.DAO
             }
         }
 
-        public int Delete(int idEmployee, DateTime dateDebut)
+        public int Delete(int idEmployee, DateTime dateVersement)
         {
             try
             {
                 mainPaiement = staffManag.Paiements.FirstOrDefault
                 (
                     mainPaiement => mainPaiement.IdEmployee == idEmployee &&
-                                   mainPaiement.DateDebutContrat == dateDebut
+                                   mainPaiement.DateVersement == dateVersement
                 );
                 staffManag.Paiements.Remove(mainPaiement);
                 staffManag.SaveChanges();
@@ -70,14 +70,14 @@ namespace Staff_Management.DAO
             }
         }
 
-        public bool Exists(int id, DateTime dateDebut)
+        public bool Exists(int idEmployee, DateTime transactionDate)
         {
             try
             {
                 return staffManag.Paiements.SingleOrDefault
                     (
-                        mainPaiement => mainPaiement.IdEmployee == id &&
-                                   mainPaiement.DateDebutContrat == dateDebut
+                        mainPaiement => mainPaiement.IdEmployee == idEmployee &&
+                                   mainPaiement.DateVersement == transactionDate
                     ) != null;
             }
             catch (Exception ex)
