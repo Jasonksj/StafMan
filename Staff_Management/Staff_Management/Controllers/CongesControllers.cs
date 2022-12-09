@@ -59,6 +59,11 @@ namespace Staff_Management.Controllers
             return congesServices.FilterByPercentLost(percentLost);
         }
 
+        public Conge FindById(int id)
+        {
+            return congesServices.FindById(id);
+        }
+
         public bool Exists(int id)
         {
             return congesServices.Exists(id);

@@ -61,6 +61,17 @@ namespace Staff_Management.Services
             }
         }
 
+        public Mission FindById(int id)
+        {
+            try
+            {
+                return FindAll().Find(mission => mission.IdMission == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur " + ex.Message);
+            }
+        }
         public Mission Save(Mission mission)
         {
             try
