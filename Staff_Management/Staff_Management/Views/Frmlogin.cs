@@ -101,13 +101,13 @@ namespace Staff_Management.Views
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (!checkBox1.Checked)
+            if (checkBox1.Checked)
             {
-                password_txt.UseSystemPasswordChar = false;
+                password_txt.UseSystemPasswordChar = true;
             }
             else
             {
-                password_txt.UseSystemPasswordChar = true;
+                password_txt.UseSystemPasswordChar = false;
             }
         }
     }
