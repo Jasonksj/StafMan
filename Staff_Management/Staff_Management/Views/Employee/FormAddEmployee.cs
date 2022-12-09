@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Staff_Management.Controllers;
 
 namespace Staff_Management.Views.Employee
 {
     public partial class FormAddEmployee : Form
     {
+        EmployeeControllers empControllers;
+        bool isUpdatingForm;
+        Entities.Employee emp;
+
         public FormAddEmployee()
         {
             InitializeComponent();

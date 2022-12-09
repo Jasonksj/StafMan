@@ -68,11 +68,6 @@ namespace Staff_Management.Controllers
             return deptServices.GetEmployeesList(departement);
         }
 
-        public Departement FindById(int id)
-        {
-            return deptServices.FindById(id);
-        }
-
         public bool Exists(int id)
         {
             return deptServices.Exists(id);
