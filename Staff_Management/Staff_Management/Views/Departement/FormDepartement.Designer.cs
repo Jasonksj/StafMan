@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -38,20 +38,20 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.usernameemploye_txt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.nomdepartement_txt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_valid = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_title
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 26);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "AJOUT D\'UN DEPARTEMENT";
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(182, 28);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(343, 26);
+            this.lbl_title.TabIndex = 10;
+            this.lbl_title.Text = "AJOUT D\'UN DEPARTEMENT";
             // 
             // label2
             // 
@@ -143,41 +143,42 @@
             this.panel5.Size = new System.Drawing.Size(200, 1);
             this.panel5.TabIndex = 32;
             // 
-            // usernameemploye_txt
+            // nomdepartement_txt
             // 
-            this.usernameemploye_txt.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.usernameemploye_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.usernameemploye_txt.DefaultText = "";
-            this.usernameemploye_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.usernameemploye_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.usernameemploye_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameemploye_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameemploye_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernameemploye_txt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.usernameemploye_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernameemploye_txt.Location = new System.Drawing.Point(432, 150);
-            this.usernameemploye_txt.Name = "usernameemploye_txt";
-            this.usernameemploye_txt.PasswordChar = '\0';
-            this.usernameemploye_txt.PlaceholderText = "";
-            this.usernameemploye_txt.SelectedText = "";
-            this.usernameemploye_txt.Size = new System.Drawing.Size(202, 27);
-            this.usernameemploye_txt.TabIndex = 31;
+            this.nomdepartement_txt.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.nomdepartement_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nomdepartement_txt.DefaultText = "";
+            this.nomdepartement_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nomdepartement_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nomdepartement_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nomdepartement_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nomdepartement_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nomdepartement_txt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.nomdepartement_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nomdepartement_txt.Location = new System.Drawing.Point(432, 150);
+            this.nomdepartement_txt.Name = "nomdepartement_txt";
+            this.nomdepartement_txt.PasswordChar = '\0';
+            this.nomdepartement_txt.PlaceholderText = "";
+            this.nomdepartement_txt.SelectedText = "";
+            this.nomdepartement_txt.Size = new System.Drawing.Size(202, 27);
+            this.nomdepartement_txt.TabIndex = 31;
             // 
-            // guna2Button1
+            // btn_valid
             // 
-            this.guna2Button1.BorderRadius = 19;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.SlateBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(454, 255);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 35;
-            this.guna2Button1.Text = "Valider";
+            this.btn_valid.BorderRadius = 19;
+            this.btn_valid.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_valid.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_valid.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_valid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_valid.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_valid.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_valid.ForeColor = System.Drawing.Color.White;
+            this.btn_valid.Location = new System.Drawing.Point(454, 255);
+            this.btn_valid.Name = "btn_valid";
+            this.btn_valid.Size = new System.Drawing.Size(180, 45);
+            this.btn_valid.TabIndex = 35;
+            this.btn_valid.Text = "Valider";
+            this.btn_valid.Click += new System.EventHandler(this.btn_valid_Click);
             // 
             // FormDepartement
             // 
@@ -185,22 +186,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(675, 358);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btn_valid);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.usernameemploye_txt);
+            this.Controls.Add(this.nomdepartement_txt);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDepartement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDepartement";
+            this.Load += new System.EventHandler(this.FormDepartement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -211,7 +213,7 @@
 
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
@@ -219,7 +221,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private Guna.UI2.WinForms.Guna2TextBox usernameemploye_txt;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TextBox nomdepartement_txt;
+        private Guna.UI2.WinForms.Guna2Button btn_valid;
     }
 }

@@ -206,5 +206,17 @@ namespace Staff_Management.Views
         {
 
         }
+
+        private void btn_deconnec_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Souhaitez-vous vraiment vous deconnecter ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                Frmlogin frmlogin = new Frmlogin();
+                frmlogin.Show();
+                this.Hide();
+            }
+            
+        }
     }
 }

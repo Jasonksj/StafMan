@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_mission = new System.Windows.Forms.Button();
             this.btn_conges = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_deconnec = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.main.SuspendLayout();
@@ -59,6 +61,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.btn_deconnec);
             this.panel1.Controls.Add(this.btn_mission);
             this.panel1.Controls.Add(this.btn_conges);
             this.panel1.Controls.Add(this.btn_absence);
@@ -83,7 +86,7 @@
             this.btn_mission.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mission.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mission.ForeColor = System.Drawing.Color.White;
-            this.btn_mission.Location = new System.Drawing.Point(12, 690);
+            this.btn_mission.Location = new System.Drawing.Point(15, 712);
             this.btn_mission.Name = "btn_mission";
             this.btn_mission.Size = new System.Drawing.Size(139, 57);
             this.btn_mission.TabIndex = 8;
@@ -99,7 +102,7 @@
             this.btn_conges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_conges.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_conges.ForeColor = System.Drawing.Color.White;
-            this.btn_conges.Location = new System.Drawing.Point(12, 627);
+            this.btn_conges.Location = new System.Drawing.Point(15, 639);
             this.btn_conges.Name = "btn_conges";
             this.btn_conges.Size = new System.Drawing.Size(139, 57);
             this.btn_conges.TabIndex = 7;
@@ -115,7 +118,7 @@
             this.btn_absence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_absence.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_absence.ForeColor = System.Drawing.Color.White;
-            this.btn_absence.Location = new System.Drawing.Point(12, 564);
+            this.btn_absence.Location = new System.Drawing.Point(15, 576);
             this.btn_absence.Name = "btn_absence";
             this.btn_absence.Size = new System.Drawing.Size(139, 57);
             this.btn_absence.TabIndex = 6;
@@ -131,7 +134,7 @@
             this.btn_paiement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_paiement.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_paiement.ForeColor = System.Drawing.Color.White;
-            this.btn_paiement.Location = new System.Drawing.Point(12, 426);
+            this.btn_paiement.Location = new System.Drawing.Point(15, 421);
             this.btn_paiement.Name = "btn_paiement";
             this.btn_paiement.Size = new System.Drawing.Size(139, 57);
             this.btn_paiement.TabIndex = 5;
@@ -147,7 +150,7 @@
             this.btn_contrat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_contrat.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_contrat.ForeColor = System.Drawing.Color.White;
-            this.btn_contrat.Location = new System.Drawing.Point(12, 501);
+            this.btn_contrat.Location = new System.Drawing.Point(15, 501);
             this.btn_contrat.Name = "btn_contrat";
             this.btn_contrat.Size = new System.Drawing.Size(139, 57);
             this.btn_contrat.TabIndex = 4;
@@ -163,7 +166,7 @@
             this.btn_fonction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_fonction.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_fonction.ForeColor = System.Drawing.Color.White;
-            this.btn_fonction.Location = new System.Drawing.Point(12, 334);
+            this.btn_fonction.Location = new System.Drawing.Point(12, 337);
             this.btn_fonction.Name = "btn_fonction";
             this.btn_fonction.Size = new System.Drawing.Size(142, 57);
             this.btn_fonction.TabIndex = 3;
@@ -293,7 +296,7 @@
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::Staff_Management.Properties.Resources.icons8_minimize_window_32;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(1721, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(31, 25);
@@ -306,7 +309,7 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Staff_Management.Properties.Resources.icons8_close_window_32;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(1758, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(31, 25);
@@ -323,6 +326,22 @@
             this.pictureBox1.Size = new System.Drawing.Size(178, 142);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btn_deconnec
+            // 
+            this.btn_deconnec.FlatAppearance.BorderSize = 0;
+            this.btn_deconnec.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_deconnec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_deconnec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_deconnec.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deconnec.ForeColor = System.Drawing.Color.White;
+            this.btn_deconnec.Location = new System.Drawing.Point(15, 775);
+            this.btn_deconnec.Name = "btn_deconnec";
+            this.btn_deconnec.Size = new System.Drawing.Size(139, 57);
+            this.btn_deconnec.TabIndex = 9;
+            this.btn_deconnec.Text = "Deconnexion";
+            this.btn_deconnec.UseVisualStyleBackColor = true;
+            this.btn_deconnec.Click += new System.EventHandler(this.btn_deconnec_Click);
             // 
             // MainForm
             // 
@@ -372,5 +391,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_deconnec;
     }
 }

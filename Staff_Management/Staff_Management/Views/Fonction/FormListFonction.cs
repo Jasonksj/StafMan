@@ -186,5 +186,10 @@ namespace Staff_Management.Views.Fonction
             }
             
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

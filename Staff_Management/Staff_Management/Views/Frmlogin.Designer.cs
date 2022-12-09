@@ -96,6 +96,7 @@
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label_username
             // 
@@ -131,6 +132,7 @@
             this.Username_txt.ForeColor = System.Drawing.Color.Gray;
             this.Username_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Username_txt.Location = new System.Drawing.Point(647, 136);
+            this.Username_txt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Username_txt.Name = "Username_txt";
             this.Username_txt.PasswordChar = '\0';
             this.Username_txt.PlaceholderText = "";
@@ -168,6 +170,7 @@
             this.password_txt.ForeColor = System.Drawing.Color.Gray;
             this.password_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txt.Location = new System.Drawing.Point(645, 219);
+            this.password_txt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.password_txt.Name = "password_txt";
             this.password_txt.PasswordChar = '●';
             this.password_txt.PlaceholderText = "";
@@ -252,6 +255,7 @@
             this.Name = "Frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmlogin";
+            this.Load += new System.EventHandler(this.Frmlogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

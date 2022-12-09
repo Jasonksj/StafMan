@@ -184,6 +184,16 @@ namespace Staff_Management.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Paiement {
+            get {
+                object obj = ResourceManager.GetObject("Paiement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap personnel_management_concept_277904_11919 {
             get {
                 object obj = ResourceManager.GetObject("personnel-management-concept_277904-11919", resourceCulture);
