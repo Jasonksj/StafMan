@@ -73,5 +73,10 @@ namespace Staff_Management.Controllers
         {
             return congesServices.Exists(justification);
         }
+        public Conge Findbyjustification(string justification)
+        {
+            return congesServices.Findbyjustification(justification);
+        }
+        
     }
 }

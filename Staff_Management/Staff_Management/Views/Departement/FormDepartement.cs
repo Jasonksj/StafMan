@@ -96,7 +96,7 @@ namespace Staff_Management.Views.Departement
                 else
                 {
                     Entities.Departement departementCreated = departementControllers.Save
-                        (nomdepartement_txt.Text, employee.IdManager.GetValueOrDefault());
+                        (nomdepartement_txt.Text, employee.IdManager.Value);
                     if (departementCreated != null)
                     {
                         MessageBox.Show

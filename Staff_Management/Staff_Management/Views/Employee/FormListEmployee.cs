@@ -41,8 +41,8 @@ namespace Staff_Management.Views.Employee
 
         private void btn_ajout_Click(object sender, EventArgs e)
         {
-            FormAddEmployee formAddEmployee = new FormAddEmployee();
-            formAddEmployee.Show();
+            FrmSignup frmSignup = new FrmSignup();
+            frmSignup.ShowDialog();
         }
 
         private void FormListEmployee_Load(object sender, EventArgs e)
