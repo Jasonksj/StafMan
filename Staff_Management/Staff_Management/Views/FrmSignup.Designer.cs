@@ -107,7 +107,7 @@
             // Check_statut
             // 
             this.Check_statut.AutoSize = true;
-            this.Check_statut.Location = new System.Drawing.Point(471, 374);
+            this.Check_statut.Location = new System.Drawing.Point(473, 374);
             this.Check_statut.Name = "Check_statut";
             this.Check_statut.Size = new System.Drawing.Size(102, 17);
             this.Check_statut.TabIndex = 17;
@@ -280,6 +280,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 42;
             this.guna2Button1.Text = "Register";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -291,7 +292,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.SlateBlue;
             this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(660, 439);
+            this.guna2Button2.Location = new System.Drawing.Point(661, 439);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 43;

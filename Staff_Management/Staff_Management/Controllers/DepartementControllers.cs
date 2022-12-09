@@ -48,6 +48,11 @@ namespace Staff_Management.Controllers
             return deptServices.FindByName(name);
         }
 
+        public Departement FindById(int id)
+        {
+            return deptServices.FindById(id);
+        }
+
         public List<Departement> FilterByName(string name)
         {
             return deptServices.FilterByName(name);

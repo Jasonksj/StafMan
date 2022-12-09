@@ -62,5 +62,12 @@ namespace Staff_Management.Views
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
+        }
     }
 }

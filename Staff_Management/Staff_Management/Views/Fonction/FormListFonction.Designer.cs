@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,42 +43,39 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblCount = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.SlateBlue;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SlateBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.Column1});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView1.Location = new System.Drawing.Point(63, 309);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Location = new System.Drawing.Point(47, 251);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1892, 482);
+            this.dataGridView1.Size = new System.Drawing.Size(1419, 392);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -98,10 +95,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(777, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(583, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 35);
+            this.label1.Size = new System.Drawing.Size(280, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "LISTE DES FONCTIONS";
             // 
@@ -109,19 +105,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(579, 127);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(434, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 26);
+            this.label2.Size = new System.Drawing.Size(97, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Recherche";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(716, 127);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Location = new System.Drawing.Point(537, 103);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(639, 22);
+            this.txtSearch.Size = new System.Drawing.Size(480, 20);
             this.txtSearch.TabIndex = 2;
             this.txtSearch.Text = "Search...";
             this.txtSearch.TextChanged += new System.EventHandler(this.FilterByInput);
@@ -129,10 +123,9 @@
             // btn_ajout
             // 
             this.btn_ajout.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ajout.Location = new System.Drawing.Point(127, 234);
-            this.btn_ajout.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ajout.Location = new System.Drawing.Point(95, 190);
             this.btn_ajout.Name = "btn_ajout";
-            this.btn_ajout.Size = new System.Drawing.Size(209, 49);
+            this.btn_ajout.Size = new System.Drawing.Size(157, 40);
             this.btn_ajout.TabIndex = 8;
             this.btn_ajout.Text = "Ajouter";
             this.btn_ajout.UseVisualStyleBackColor = true;
@@ -141,10 +134,9 @@
             // btn_update
             // 
             this.btn_update.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.Location = new System.Drawing.Point(660, 234);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_update.Location = new System.Drawing.Point(495, 190);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(209, 49);
+            this.btn_update.Size = new System.Drawing.Size(157, 40);
             this.btn_update.TabIndex = 8;
             this.btn_update.Text = "Modifier";
             this.btn_update.UseVisualStyleBackColor = true;
@@ -153,10 +145,9 @@
             // btn_delete
             // 
             this.btn_delete.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.Location = new System.Drawing.Point(1201, 234);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_delete.Location = new System.Drawing.Point(901, 190);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(209, 49);
+            this.btn_delete.Size = new System.Drawing.Size(157, 40);
             this.btn_delete.TabIndex = 8;
             this.btn_delete.Text = "Supprimer";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -165,10 +156,9 @@
             // btn_refresh
             // 
             this.btn_refresh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refresh.Location = new System.Drawing.Point(1721, 234);
-            this.btn_refresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_refresh.Location = new System.Drawing.Point(1291, 190);
             this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(195, 49);
+            this.btn_refresh.Size = new System.Drawing.Size(146, 40);
             this.btn_refresh.TabIndex = 8;
             this.btn_refresh.Text = "Actualiser";
             this.btn_refresh.UseVisualStyleBackColor = true;
@@ -178,10 +168,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 795);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(43, 646);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(306, 26);
+            this.label3.Size = new System.Drawing.Size(241, 22);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nombre d\'enreigistrements :";
             // 
@@ -189,39 +178,29 @@
             // 
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCount.Location = new System.Drawing.Point(409, 795);
-            this.lblCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCount.Location = new System.Drawing.Point(307, 646);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(48, 26);
+            this.lblCount.Size = new System.Drawing.Size(40, 22);
             this.lblCount.TabIndex = 1;
             this.lblCount.Text = "???";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 186);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(311, 104);
+            this.comboBox1.Location = new System.Drawing.Point(241, 90);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 24);
+            this.comboBox1.Size = new System.Drawing.Size(141, 21);
             this.comboBox1.TabIndex = 15;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FormListFonction
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_update);
@@ -232,12 +211,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormListFonction";
-            this.Size = new System.Drawing.Size(2013, 836);
+            this.Size = new System.Drawing.Size(1510, 679);
             this.Load += new System.EventHandler(this.FormListFonction_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,7 +232,6 @@
         private System.Windows.Forms.Button btn_refresh;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblCount;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.ComboBox comboBox1;

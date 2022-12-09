@@ -443,6 +443,7 @@
       <DependentUpon>StafManModel.edmx</DependentUpon>
       <LastGenOutput>StafManModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Paiement.png" />
     <None Include="Resources\abcnes1.png" />
     <None Include="Resources\con.png" />
     <None Include="Resources\abcnes.png" />

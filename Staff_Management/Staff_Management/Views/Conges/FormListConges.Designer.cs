@@ -47,10 +47,8 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -205,15 +203,6 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "???";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 151);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -228,7 +217,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_update);
@@ -242,7 +230,6 @@
             this.Name = "FormListConges";
             this.Size = new System.Drawing.Size(1510, 679);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,7 +253,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
     }
 }

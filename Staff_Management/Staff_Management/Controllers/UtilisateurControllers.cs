@@ -19,11 +19,10 @@ namespace Staff_Management.Controllers
             utilisateurServices = new UtilisateurServices();
         }
 
-        public Utilisateur Save(int id, string name, string password)
+        public Utilisateur Save(string name, string password)
         {
             Utilisateur utilisateur = new Utilisateur
             {
-                IdUtilisateur = id,
                 NomUtilisateur = name,
                 MotDePasse = password
             };
