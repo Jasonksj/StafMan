@@ -236,5 +236,17 @@ namespace Staff_Management.Services
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
+
+        public Employee FindById(int id)
+        {
+            try
+            {
+                return FindAll().Find(employee => employee.Id == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
     }
 }

@@ -73,6 +73,11 @@ namespace Staff_Management.Controllers
             return missionServices.FindByName(name);
         }
 
+        public Mission FIndById(int id)
+        {
+            return missionServices.FindById(id);
+        }
+
         public bool Exists(int id)
         {
             return missionServices.Exists(id);

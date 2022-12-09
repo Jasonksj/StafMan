@@ -103,5 +103,10 @@ namespace Staff_Management.Controllers
         {
             return empServices.GetAttributedMissionsList(manager);
         }
+
+        public Employee FindById(int id) 
+        {
+            return empServices.FindById(id);
+        }
     }
 }

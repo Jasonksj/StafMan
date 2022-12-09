@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Staff_Management.Controllers;
-using Staff_Management.Entities;
 
 namespace Staff_Management.Views
 {
     public partial class FrmSignup : Form
     {
-        FonctionControllers fonctionControllers;
+        EmployeeControllers empControllers;
+        UtilisateurControllers utilControllers;
 
         public FrmSignup()
         {
@@ -24,7 +24,8 @@ namespace Staff_Management.Views
             //combo_gender.SelectedIndex = -1;
             //Check_statut.Checked = true;
             //dateTimePicker1.Value = new DateTime(2000, 8, 16);
-            fonctionControllers = new FonctionControllers();
+            empControllers = new EmployeeControllers();
+            utilControllers = new UtilisateurControllers();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

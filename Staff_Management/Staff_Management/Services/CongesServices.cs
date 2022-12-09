@@ -167,5 +167,16 @@ namespace Staff_Management.Services
                 throw new Exception("Erreur : " + ex.Message);
             }
         }
+        public Conge Findbyjustification (string justification)
+        {
+            try
+            {
+                return FindAll().Find(conges => conges.Justification == justification);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur : " + ex.Message);
+            }
+        }
     }
 }

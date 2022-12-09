@@ -61,5 +61,10 @@ namespace Staff_Management.Controllers
         {
             return absenceServices.FindAll();
         }
+
+        public Absence FindById(int id)
+        {
+            return absenceServices.FindById(id);
+        }
     }
 }

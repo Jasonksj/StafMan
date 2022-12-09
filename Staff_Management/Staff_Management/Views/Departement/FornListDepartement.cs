@@ -41,21 +41,20 @@ namespace Staff_Management.Views.Departement
             employeeControllers= new EmployeeControllers();
         }
 
-        private void PopulateDataGridView(List<Entities.Departement> departements, List<Entities.Employee> employees)
+        private void PopulateDataGridView(List<Entities.Departement> departements)
         {
             dataGridView1.Rows.Clear();
             departements.ForEach
                 (
                     delegate (Entities.Departement departement)
                     {
-                        dataGridView1.Rows.Add(false, departement.Nom);
-                    }
-                );
-            employees.ForEach
-                (
-                    delegate (Entities.Employee employee)
-                    {
-                        dataGridView1.Rows.Add(false, employee.Nom);
+                        dataGridView1.Rows.Add
+                        (
+                            false,
+                            departement.Nom,
+                            employeeControllers.FindById(departement.IdManager).Nom
+
+                        );
                     }
                 );
 
@@ -63,7 +62,7 @@ namespace Staff_Management.Views.Departement
 
         private void LoadForm()
         {
-            PopulateDataGridView(departementControllers.FindAll(), employeeControllers.FindAll());
+            PopulateDataGridView(departementControllers.FindAll());
             CountItems();
             txt_search.SelectAll();
         }
@@ -96,7 +95,7 @@ namespace Staff_Management.Views.Departement
                 }
                 else
                 {
-                    PopulateDataGridView(departementControllers.FilterByName(input), employeeControllers.FilterByName(input));
+                    PopulateDataGridView(departementControllers.FilterByName(input));
                     CountItems();
                 }
             }

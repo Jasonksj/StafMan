@@ -49,9 +49,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(719, 373);
+            this.linkLabel1.Location = new System.Drawing.Point(959, 459);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(82, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(100, 16);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Back to SignUp";
@@ -60,9 +61,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(713, 373);
+            this.label1.Location = new System.Drawing.Point(951, 459);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 1;
             // 
             // label2
@@ -70,9 +72,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label2.Location = new System.Drawing.Point(629, 34);
+            this.label2.Location = new System.Drawing.Point(839, 42);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 30);
+            this.label2.Size = new System.Drawing.Size(302, 37);
             this.label2.TabIndex = 2;
             this.label2.Text = "AUTHENTIFICATION";
             // 
@@ -81,18 +84,20 @@
             this.label_pass.AutoSize = true;
             this.label_pass.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label_pass.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label_pass.Location = new System.Drawing.Point(643, 192);
+            this.label_pass.Location = new System.Drawing.Point(857, 236);
+            this.label_pass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_pass.Name = "label_pass";
-            this.label_pass.Size = new System.Drawing.Size(93, 24);
+            this.label_pass.Size = new System.Drawing.Size(124, 31);
             this.label_pass.TabIndex = 3;
             this.label_pass.Text = "Password";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(756, 256);
+            this.checkBox1.Location = new System.Drawing.Point(1008, 315);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 17);
+            this.checkBox1.Size = new System.Drawing.Size(125, 20);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -103,18 +108,20 @@
             this.label_username.AutoSize = true;
             this.label_username.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_username.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label_username.Location = new System.Drawing.Point(643, 109);
+            this.label_username.Location = new System.Drawing.Point(857, 134);
+            this.label_username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_username.Name = "label_username";
-            this.label_username.Size = new System.Drawing.Size(98, 24);
+            this.label_username.Size = new System.Drawing.Size(130, 31);
             this.label_username.TabIndex = 6;
             this.label_username.Text = "Username";
             // 
             // not_account
             // 
             this.not_account.AutoSize = true;
-            this.not_account.Location = new System.Drawing.Point(703, 360);
+            this.not_account.Location = new System.Drawing.Point(937, 443);
+            this.not_account.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.not_account.Name = "not_account";
-            this.not_account.Size = new System.Drawing.Size(117, 13);
+            this.not_account.Size = new System.Drawing.Size(140, 16);
             this.not_account.TabIndex = 7;
             this.not_account.Text = "Don\'t have an Account";
             // 
@@ -131,29 +138,31 @@
             this.Username_txt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username_txt.ForeColor = System.Drawing.Color.Gray;
             this.Username_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Username_txt.Location = new System.Drawing.Point(647, 136);
-            this.Username_txt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Username_txt.Location = new System.Drawing.Point(863, 167);
+            this.Username_txt.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Username_txt.Name = "Username_txt";
             this.Username_txt.PasswordChar = '\0';
             this.Username_txt.PlaceholderText = "";
             this.Username_txt.SelectedText = "";
-            this.Username_txt.Size = new System.Drawing.Size(202, 27);
+            this.Username_txt.Size = new System.Drawing.Size(269, 33);
             this.Username_txt.TabIndex = 11;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SlateBlue;
-            this.panel1.Location = new System.Drawing.Point(649, 166);
+            this.panel1.Location = new System.Drawing.Point(865, 204);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 1);
+            this.panel1.Size = new System.Drawing.Size(267, 1);
             this.panel1.TabIndex = 12;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SlateBlue;
-            this.panel2.Location = new System.Drawing.Point(647, 249);
+            this.panel2.Location = new System.Drawing.Point(863, 306);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 1);
+            this.panel2.Size = new System.Drawing.Size(267, 1);
             this.panel2.TabIndex = 14;
             // 
             // password_txt
@@ -169,13 +178,13 @@
             this.password_txt.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.password_txt.ForeColor = System.Drawing.Color.Gray;
             this.password_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password_txt.Location = new System.Drawing.Point(645, 219);
-            this.password_txt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password_txt.Location = new System.Drawing.Point(860, 270);
+            this.password_txt.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.password_txt.Name = "password_txt";
             this.password_txt.PasswordChar = '●';
             this.password_txt.PlaceholderText = "";
             this.password_txt.SelectedText = "";
-            this.password_txt.Size = new System.Drawing.Size(202, 27);
+            this.password_txt.Size = new System.Drawing.Size(269, 33);
             this.password_txt.TabIndex = 13;
             this.password_txt.UseSystemPasswordChar = true;
             // 
@@ -185,9 +194,10 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::Staff_Management.Properties.Resources.icons8_minimize_window_32;
-            this.button3.Location = new System.Drawing.Point(809, 0);
+            this.button3.Location = new System.Drawing.Point(1079, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(31, 25);
+            this.button3.Size = new System.Drawing.Size(41, 31);
             this.button3.TabIndex = 16;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -197,9 +207,10 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::Staff_Management.Properties.Resources.icons8_close_window_32;
-            this.button2.Location = new System.Drawing.Point(846, 0);
+            this.button2.Location = new System.Drawing.Point(1128, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 25);
+            this.button2.Size = new System.Drawing.Size(41, 31);
             this.button2.TabIndex = 15;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -207,9 +218,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(625, 501);
+            this.pictureBox1.Size = new System.Drawing.Size(833, 617);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -223,19 +235,20 @@
             this.guna2Button1.FillColor = System.Drawing.Color.SlateBlue;
             this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(667, 312);
+            this.guna2Button1.Location = new System.Drawing.Point(889, 384);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(240, 55);
             this.guna2Button1.TabIndex = 36;
             this.guna2Button1.Text = "LOGIN";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Frmlogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(875, 429);
+            this.ClientSize = new System.Drawing.Size(1167, 528);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -252,6 +265,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmlogin";
