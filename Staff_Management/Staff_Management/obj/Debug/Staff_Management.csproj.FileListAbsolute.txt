@@ -240,3 +240,7 @@ E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Mission.FormMission.resources
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormListPaiement.resources
 E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.Views.Paiement.FormPaiement.resources
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.exe.manifest
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\bin\Debug\Staff_Management.application
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.exe.manifest
+E:\ProgDonnAppMulticouches\Project\StafMan\Staff_Management\Staff_Management\obj\Debug\Staff_Management.application

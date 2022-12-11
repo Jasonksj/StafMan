@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_deconnec = new System.Windows.Forms.Button();
             this.btn_mission = new System.Windows.Forms.Button();
             this.btn_conges = new System.Windows.Forms.Button();
             this.btn_absence = new System.Windows.Forms.Button();
@@ -38,24 +39,23 @@
             this.btn_fonction = new System.Windows.Forms.Button();
             this.btn_dept = new System.Windows.Forms.Button();
             this.pnlbat = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_employee = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.main = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_deconnec = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.main.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,8 +75,24 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(151, 1071);
+            this.panel1.Size = new System.Drawing.Size(194, 894);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_deconnec
+            // 
+            this.btn_deconnec.FlatAppearance.BorderSize = 0;
+            this.btn_deconnec.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_deconnec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_deconnec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_deconnec.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deconnec.ForeColor = System.Drawing.Color.White;
+            this.btn_deconnec.Location = new System.Drawing.Point(15, 775);
+            this.btn_deconnec.Name = "btn_deconnec";
+            this.btn_deconnec.Size = new System.Drawing.Size(139, 57);
+            this.btn_deconnec.TabIndex = 9;
+            this.btn_deconnec.Text = "Deconnexion";
+            this.btn_deconnec.UseVisualStyleBackColor = true;
+            this.btn_deconnec.Click += new System.EventHandler(this.btn_deconnec_Click);
             // 
             // btn_mission
             // 
@@ -198,6 +214,16 @@
             this.pnlbat.Size = new System.Drawing.Size(11, 57);
             this.pnlbat.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8752;
+            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(194, 141);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_employee
             // 
             this.btn_employee.FlatAppearance.BorderSize = 0;
@@ -220,11 +246,37 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(151, 0);
+            this.panel2.Location = new System.Drawing.Point(194, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1789, 49);
+            this.panel2.Size = new System.Drawing.Size(1261, 49);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(1194, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(31, 25);
+            this.button3.TabIndex = 1;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(1230, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 25);
+            this.button2.TabIndex = 0;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // main
             // 
@@ -232,9 +284,9 @@
             this.main.Controls.Add(this.panel3);
             this.main.Controls.Add(this.pictureBox2);
             this.main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main.Location = new System.Drawing.Point(151, 49);
+            this.main.Location = new System.Drawing.Point(194, 49);
             this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(1789, 1022);
+            this.main.Size = new System.Drawing.Size(1261, 845);
             this.main.TabIndex = 2;
             // 
             // panel3
@@ -244,9 +296,9 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1000);
+            this.panel3.Location = new System.Drawing.Point(0, 823);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1789, 22);
+            this.panel3.Size = new System.Drawing.Size(1261, 22);
             this.panel3.TabIndex = 1;
             // 
             // label3
@@ -286,68 +338,16 @@
             this.pictureBox2.Image = global::Staff_Management.Properties.Resources.personnel_management_concept_277904_11919;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1789, 1022);
+            this.pictureBox2.Size = new System.Drawing.Size(1261, 845);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(1721, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(31, 25);
-            this.button3.TabIndex = 1;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1758, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 25);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8752;
-            this.pictureBox1.Image = global::Staff_Management.Properties.Resources.three_man_worker_with_yellow_swoosh_698903_8751;
-            this.pictureBox1.Location = new System.Drawing.Point(-27, -21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 142);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_deconnec
-            // 
-            this.btn_deconnec.FlatAppearance.BorderSize = 0;
-            this.btn_deconnec.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_deconnec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_deconnec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deconnec.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deconnec.ForeColor = System.Drawing.Color.White;
-            this.btn_deconnec.Location = new System.Drawing.Point(15, 775);
-            this.btn_deconnec.Name = "btn_deconnec";
-            this.btn_deconnec.Size = new System.Drawing.Size(139, 57);
-            this.btn_deconnec.TabIndex = 9;
-            this.btn_deconnec.Text = "Deconnexion";
-            this.btn_deconnec.UseVisualStyleBackColor = true;
-            this.btn_deconnec.Click += new System.EventHandler(this.btn_deconnec_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1940, 1071);
+            this.ClientSize = new System.Drawing.Size(1455, 894);
             this.Controls.Add(this.main);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -359,12 +359,12 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.main.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,7 +377,6 @@
         private System.Windows.Forms.Panel main;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_paiement;
         private System.Windows.Forms.Button btn_contrat;
         private System.Windows.Forms.Button btn_fonction;
@@ -392,5 +391,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_deconnec;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

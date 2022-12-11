@@ -58,39 +58,43 @@ namespace Staff_Management.Views
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Entities.Utilisateur userCreated = userControllers.Save
-                        (Username_txt.Text, password_txt.Text);
-                if (userCreated != null)
-                {
-                    MessageBox.Show
-                       (
-                           $"Création de la fonction '{userCreated.NomUtilisateur}' éffectuée avec succès !",
-                           "Succès",
-                           MessageBoxButtons.OK,
-                           MessageBoxIcon.Information
-                       );
-                    Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erreur : " + ex.Message);
-            }
+            //try
+            //{
+            //    Entities.Utilisateur userCreated = userControllers.Save
+            //            (Username_txt.Text, password_txt.Text);
+            //    if (userCreated != null)
+            //    {
+            //        MessageBox.Show
+            //           (
+            //               $"Création de la fonction '{userCreated.NomUtilisateur}' éffectuée avec succès !",
+            //               "Succès",
+            //               MessageBoxButtons.OK,
+            //               MessageBoxIcon.Information
+            //           );
+            //        Close();
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw new Exception("Erreur : " + ex.Message);
+            //}
 
             if (testObligatoire() == null)
             {
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
-                exitApp = false;
-                this.Close();
+                if(Username_txt.Text == "admin" && password_txt.Text == "admin")
+                {
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                    exitApp = false;
+                    this.Close();
+                }
+                
             }
             else
             {
                 MessageBox.Show(testObligatoire(), "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            
 
         }
 
